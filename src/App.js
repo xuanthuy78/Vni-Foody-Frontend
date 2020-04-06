@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.scss'
 import routes from './routes/routes'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.js'
 export class App extends Component {
   showRouters = (routes) => {
     var result = null
