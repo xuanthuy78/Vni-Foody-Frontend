@@ -1,0 +1,82 @@
+$menu-backgroud: rgb(215, 75, 51);
+$pride-color: rgb(90, 7, 0);
+.top-selling {
+  .owl-carousel {
+    &:hover {
+      .owl-nav {
+        opacity: 1 !important;
+      }
+    }
+    .card {
+      padding: 10px;
+      margin-left: 1px;
+      .card-body {
+        text-align: center;
+        .card-name {
+          .link-product {
+            color: black !important;
+            &:hover {
+              text-decoration: none !important;
+              color: $menu-backgroud !important;
+            }
+          }
+        }
+        .card-pride {
+          padding: 10px;
+          color: $pride-color !important;
+        }
+        .card-cart {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .cart-button {
+            button {
+              color: white;
+              background: $menu-backgroud;
+              border: 1px solid $menu-backgroud;
+            }
+          }
+
+          .cart-icon {
+            background: white;
+            border: 1px solid $menu-backgroud;
+            padding: 0 5px;
+            color: $menu-backgroud;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      opacity: 0 !important;
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background: $menu-backgroud;
+        font-size: 24px;
+        display: block;
+        color: white !important;
+        border-radius: 0 !important;
+        &:hover {
+          background: black;
+          color: $menu-backgroud !important;
+        }
+      }
+      .owl-prev {
+        left: -0.3rem;
+      }
+
+      .owl-next {
+        right: -0.3rem;
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+}
