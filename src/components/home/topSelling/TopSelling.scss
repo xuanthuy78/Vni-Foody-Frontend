@@ -1,6 +1,11 @@
 $menu-backgroud: rgb(215, 75, 51);
 $pride-color: rgb(90, 7, 0);
 .top-selling {
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px !important;
+  }
   .owl-carousel {
     &:hover {
       .owl-nav {

@@ -21,13 +21,17 @@ $menu-backgroud: rgb(215, 75, 51);
       width: 100%;
     }
   }
-  .news-content {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .news-content,
+  .news-title a {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+  .news-content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    -webkit-line-clamp: 2;
   }
 }

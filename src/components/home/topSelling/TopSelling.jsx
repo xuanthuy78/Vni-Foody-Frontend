@@ -8,6 +8,7 @@ export class TopSelling extends Component {
     return (
       <section className="top-selling">
         <div className="container">
+          <div className="title">SẢN PHẨM NỔI BẬT</div>
           <OwlCarousel
             items={5}
             className="owl-theme"

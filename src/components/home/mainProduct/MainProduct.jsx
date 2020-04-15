@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './MainProduct.scss'
 import MainItem from '../mainItem/MainItem'
 import { Pagination } from 'antd'
+import OwlCarousel from 'react-owl-carousel'
+import MainNewsFoody from '../mainNewsFoody/MainNewsFoody'
 
 export class MainProduct extends Component {
   render() {
@@ -43,6 +45,28 @@ export class MainProduct extends Component {
         </div>
         <div className="product-bottom">
           <h3 className="title">TIN ẨM THỰC</h3>
+          <div className="news-food">
+            <OwlCarousel
+              items={4}
+              className="owl-theme"
+              loop
+              nav
+              margin={8}
+              autoplay
+              navText={[
+                "<i class='fa fa-chevron-left'></i>",
+                "<i class='fa fa-chevron-right'></i>",
+              ]}
+            >
+              <MainNewsFoody />
+              <MainNewsFoody />
+              <MainNewsFoody />
+              <MainNewsFoody />
+              <MainNewsFoody />
+              <MainNewsFoody />
+              <MainNewsFoody />
+            </OwlCarousel>
+          </div>
         </div>
       </div>
     )
