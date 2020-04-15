@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './CardProducts.scss'
 
-export class CardProduct extends Component {
+export class CardProducts extends Component {
   render() {
     return (
       <div className="card">
@@ -35,4 +36,4 @@ export class CardProduct extends Component {
   }
 }
 
-export default CardProduct
+export default CardProducts

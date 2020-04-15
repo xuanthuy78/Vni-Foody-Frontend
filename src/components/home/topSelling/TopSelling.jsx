@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import OwlCarousel from 'react-owl-carousel'
 import './TopSelling.scss'
-import CardProduct from './cardProduct/CardProduct'
+import { CardProducts } from '../index'
+
 export class TopSelling extends Component {
   render() {
     return (
@@ -14,14 +15,19 @@ export class TopSelling extends Component {
             nav
             margin={8}
             autoplay
+            navText={[
+              "<i class='fa fa-chevron-left'></i>",
+              "<i class='fa fa-chevron-right'></i>",
+            ]}
           >
-            <CardProduct></CardProduct>
-            <CardProduct></CardProduct>
-            <CardProduct></CardProduct>
-            <CardProduct></CardProduct>
-            <CardProduct></CardProduct>
-            <CardProduct></CardProduct>
-            <CardProduct></CardProduct>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
+            <CardProducts></CardProducts>
           </OwlCarousel>
         </div>
       </section>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
-
+import { Header, Footer } from '../index'
 export class MasterLayout extends Component {
   render() {
     const childrenWithProps = React.Children.map(this.props.children, (child) =>

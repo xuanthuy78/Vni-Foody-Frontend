@@ -1,0 +1,37 @@
+$menu-backgroud: rgb(215, 75, 51);
+
+.main-product {
+  .product-top {
+    border-bottom: 1px solid $menu-backgroud;
+    .product-title {
+      background: $menu-backgroud;
+      padding: 5px 10px 0 10px;
+      font-size: 24px;
+      h3 {
+        color: white;
+      }
+    }
+    .product-sort {
+      font-size: 14px;
+      margin-top: 20px;
+      .title {
+        display: inline;
+        margin-right: 35px !important;
+        font-size: 16px;
+      }
+      select {
+        width: 150px;
+      }
+    }
+  }
+  .product-content {
+    margin-top: 10px;
+  }
+  .product-bottom {
+    border-bottom: 1px solid $menu-backgroud;
+    .title {
+      font-size: 16px;
+    }
+    // padding: 10px 0px;
+  }
+}

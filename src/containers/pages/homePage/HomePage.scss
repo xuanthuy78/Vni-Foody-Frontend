@@ -1,0 +1,13 @@
+$menu-backgroud: rgb(215, 75, 51);
+.main-content {
+  padding: 10px 0 30px 0;
+  .main-sidebar {
+    .title {
+      padding: 10px;
+      background: $menu-backgroud;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
