@@ -17,10 +17,10 @@ export class HomePage extends Component {
         <section className="main-content">
           <div className="container">
             <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+              <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                 <SidebarMain />
               </div>
-              <div className="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+              <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                 <MainProduct />
               </div>
             </div>

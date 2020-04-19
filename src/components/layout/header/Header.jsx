@@ -10,26 +10,14 @@ export class Header extends Component {
           <section className="header-link">
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <nav className="navbar navbar-expand-md bg-success navbar-dark">
+                <nav className="navbar navbar-expand-md navbar-dark nav-hidden-sm">
                   {/* Brand */}
                   <Link className="navbar-brand" to="#">
                     <i className="fa fa-phone" />
                     Hotline:0908770095
                   </Link>
-                  {/* Toggler/collapsibe Button */}
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapsibleNavbar"
-                  >
-                    <span className="navbar-toggler-icon" />
-                  </button>
                   {/* Navbar links */}
-                  <div
-                    className="collapse navbar-collapse justify-content-end"
-                    id="collapsibleNavbar "
-                  >
+                  <div className="collapse navbar-collapse justify-content-end">
                     <ul className="navbar-nav">
                       <li className="nav-item">
                         <Link className="nav-link" to="#">
@@ -58,6 +46,96 @@ export class Header extends Component {
                     </ul>
                   </div>
                 </nav>
+                {/*Small devices (landscape phones, 576px and up)*/}
+                <div className="navbar-sm">
+                  <div className="row">
+                    <div className="col-sm-6 col-6 nav-menu">
+                      <nav className="navbar navbar-expand-md navbar-dark ">
+                        {/* Brand */}
+                        <button
+                          className="navbar-toggler"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapsibleNavbar"
+                        >
+                          <i className="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                        {/* Navbar links */}
+                        <div
+                          className="collapse navbar-collapse justify-content-end"
+                          id="collapsibleNavbar"
+                        >
+                          <ul className="navbar-nav">
+                            <li className="nav-item">
+                              <Link className="nav-link" to="#">
+                                Trang Chủ
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link className="nav-link" to="#">
+                                Sản Phẩm
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link className="nav-link" to="#">
+                                Tin Tức
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link className="nav-link" to="#">
+                                Giới thiệu
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link className="nav-link" to="#">
+                                Liên hệ
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                    <div className="col-sm-6 col-6 nav-user">
+                      <div className="user-icon">
+                        <ul className="navbar-nav">
+                          <li className="nav-item">
+                            <Link className="nav-link" to="#">
+                              <i className="fa fa-user" aria-hidden="true"></i>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="user-content">
+                        <ul className="navbar-nav">
+                          <li className="nav-item">
+                            <Link className="nav-link" to="#">
+                              <i className="fa fa-pencil-square-o" />
+                              Kiểm tra đơn hàng
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link className="nav-link" to="#">
+                              <i className="fa fa-shopping-cart" />
+                              Giỏ hàng
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link className="nav-link" to="#">
+                              <i className="fa fa-sign-in" />
+                              Đăng nhập
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link className="nav-link" to="#">
+                              <i className="fa fa-key" />
+                              Đăng ký
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

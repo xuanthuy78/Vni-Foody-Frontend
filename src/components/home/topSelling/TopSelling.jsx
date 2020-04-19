@@ -4,6 +4,25 @@ import './TopSelling.scss'
 import { CardProducts } from '../index'
 
 export class TopSelling extends Component {
+  constructor() {
+    super()
+    this.state = {
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 2,
+        },
+        768: {
+          items: 3,
+        },
+        1000: {
+          items: 4,
+        },
+      },
+    }
+  }
   render() {
     return (
       <section className="top-selling">
@@ -20,6 +39,7 @@ export class TopSelling extends Component {
               "<i class='fa fa-chevron-left'></i>",
               "<i class='fa fa-chevron-right'></i>",
             ]}
+            responsive={this.state.responsive}
           >
             <CardProducts></CardProducts>
             <CardProducts></CardProducts>

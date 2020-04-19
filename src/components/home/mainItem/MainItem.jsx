@@ -5,7 +5,7 @@ import './MainItem.scss'
 export class MainItem extends Component {
   render() {
     return (
-      <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+      <div className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
         <div className="card">
           <img
             className="card-img-top"

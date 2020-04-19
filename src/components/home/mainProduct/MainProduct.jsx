@@ -6,6 +6,25 @@ import OwlCarousel from 'react-owl-carousel'
 import MainNewsFoody from '../mainNewsFoody/MainNewsFoody'
 
 export class MainProduct extends Component {
+  constructor() {
+    super()
+    this.state = {
+      responsive: {
+        0: {
+          items: 2,
+        },
+        480: {
+          items: 3,
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 4,
+        },
+      },
+    }
+  }
   render() {
     return (
       <div className="main-product">
@@ -57,6 +76,7 @@ export class MainProduct extends Component {
                 "<i class='fa fa-chevron-left'></i>",
                 "<i class='fa fa-chevron-right'></i>",
               ]}
+              responsive={this.state.responsive}
             >
               <MainNewsFoody />
               <MainNewsFoody />

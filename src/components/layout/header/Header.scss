@@ -2,8 +2,11 @@ $menu-backgroud: rgb(215, 75, 51);
 $hover-color: white;
 .header-container {
   .header-link {
+    background: $menu-backgroud !important;
+    .navbar-sm {
+      display: none;
+    }
     .navbar {
-      background: $menu-backgroud !important;
       padding: 0px 10px !important;
       font-size: 12px !important;
       .navbar-brand {
@@ -30,7 +33,7 @@ $hover-color: white;
       background: rgb(235, 234, 234) !important;
       .form-inline {
         .input-group {
-          width: 250px !important;
+          width: 100% !important;
         }
         color: black !important;
         .form-control,
