@@ -10,6 +10,11 @@ export class MasterLayout extends Component {
         <Header></Header>
         <main className="">{childrenWithProps}</main>
         <Footer></Footer>
+        <div className="back-to-top">
+          <button className="btn-top" title="Go to top">
+            <i class="fa fa-angle-up"></i>
+          </button>
+        </div>
       </div>
     )
   }
