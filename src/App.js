@@ -4,6 +4,10 @@ import './App.scss'
 import routes from './routes/routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.js'
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel/dist/assets/owl.theme.default.css'
+import 'font-awesome/css/font-awesome.min.css'
+import 'antd/dist/antd.css'
 export class App extends Component {
   showRouters = (routes) => {
     var result = null
