@@ -12,7 +12,7 @@ export class MasterLayout extends Component {
         <Footer></Footer>
         <div className="back-to-top">
           <button className="btn-top" title="Go to top">
-            <i class="fa fa-angle-up"></i>
+            <i className="fa fa-angle-up"></i>
           </button>
         </div>
       </div>

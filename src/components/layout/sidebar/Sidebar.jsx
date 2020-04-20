@@ -3,6 +3,18 @@ import { Link } from 'react-router-dom'
 import './Sidebar.scss'
 
 export class Sidebar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      hidden: true,
+    }
+  }
+  handleHiddenSidebar = () => {
+    this.setState({
+      hidden: !this.state.hidden,
+    })
+  }
+
   render() {
     return (
       <div className="sidebar-product">
@@ -15,9 +27,18 @@ export class Sidebar extends Component {
             <Link className="nav-link" to="#">
               <i className="fa fa-arrow-circle-right" />
               THỰC ĐƠN CHÍNH
-              <i className="fa fa-angle-down float-right" />
+              <i
+                className="fa fa-angle-down float-right"
+                onClick={this.handleHiddenSidebar}
+              />
             </Link>
-            <ul className="nav nav-pills flex-column menu-child">
+            <ul
+              className={
+                this.state.hidden
+                  ? 'hidden-sidebar'
+                  : 'nav nav-pills flex-column menu-child'
+              }
+            >
               <li className="nav-item">
                 <Link className="nav-link" to="#">
                   <i className="fa fa-check" />

@@ -37,8 +37,8 @@ $menu-backgroud: rgb(215, 75, 51);
         }
       }
     }
-    .open {
-      display: block;
+    .hidden-sidebar {
+      display: none;
     }
     .menu-child {
       padding-left: 15px;
