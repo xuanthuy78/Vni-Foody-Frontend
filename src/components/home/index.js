@@ -6,6 +6,8 @@ import TopNews from './topNews/TopNews'
 import MainProduct from './mainProduct/MainProduct'
 import News from './news/News'
 import MainItem from './mainItem/MainItem'
+import MainNewsFoody from './mainNewsFoody/MainNewsFoody'
+import MainSortProduct from './mainSortProduct/MainSortProduct'
 
 export {
   Banner,
@@ -16,4 +18,6 @@ export {
   MainProduct,
   News,
   MainItem,
+  MainNewsFoody,
+  MainSortProduct,
 }

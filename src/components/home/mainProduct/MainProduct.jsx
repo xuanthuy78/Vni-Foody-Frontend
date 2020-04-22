@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import './MainProduct.scss'
-import MainItem from '../mainItem/MainItem'
 import { Pagination } from 'antd'
 import OwlCarousel from 'react-owl-carousel'
-import MainNewsFoody from '../mainNewsFoody/MainNewsFoody'
-
+import { MainNewsFoody, MainItem, MainSortProduct } from '../index'
 export class MainProduct extends Component {
   constructor() {
     super()
@@ -36,16 +34,8 @@ export class MainProduct extends Component {
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-              <div className="product-sort float-right">
-                <h3 className="title">Sắp xếp</h3>
-                <select id="cars">
-                  <option value="volvo">Mặc định</option>
-                  <option value="saab">Giá tăng dần</option>
-                  <option value="mercedes">Giá giảm dần</option>
-                  <option value="audi">Tên sản phẩm: A to Z</option>
-                  <option value="audi">Tên sản phẩm: Z to A</option>
-                </select>
-              </div>
+              {/*product-sort*/}
+              <MainSortProduct />
             </div>
           </div>
         </div>
