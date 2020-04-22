@@ -5,6 +5,13 @@ $menu-backgroud: rgb(215, 75, 51);
   background: rgb(246, 246, 246);
   position: relative;
   border: 1px solid $edge-boder;
+  .title {
+    padding: 10px;
+    background: $menu-backgroud;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
   .menu-main {
     padding: 0px 10px;
     &:after,

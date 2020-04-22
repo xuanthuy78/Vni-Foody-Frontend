@@ -1,11 +1,16 @@
 import React from 'react'
-import HomePage from '../containers/pages/homePage/HomePage'
+import { HomePage, ProductPage } from '../containers/pages'
 
 const routes = [
   {
     path: '/',
     exact: true,
     main: () => <HomePage />,
+  },
+  {
+    path: '/product',
+    exact: true,
+    main: () => <ProductPage />,
   },
 ]
 
