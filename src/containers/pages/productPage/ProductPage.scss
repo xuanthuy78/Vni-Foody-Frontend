@@ -2,27 +2,4 @@ $menu-backgroud: rgb(215, 75, 51);
 
 .product-page {
   margin-top: 30px;
-  .main-product {
-    .product-title {
-      .nav {
-        .nav-item {
-          .nav-link {
-            color: gray;
-            &:hover {
-              color: $menu-backgroud;
-            }
-          }
-        }
-        .icon-link {
-          margin-top: 8px !important;
-        }
-        .active {
-          .nav-link {
-            color: $menu-backgroud !important;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-  }
 }

@@ -18,7 +18,7 @@ export class ProductPage extends Component {
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                 <div className="main-product">
-                  <div className="product-title">
+                  <div className="menu-title">
                     <ul className="nav">
                       <li className="nav-item">
                         <Link className="nav-link" to="#">

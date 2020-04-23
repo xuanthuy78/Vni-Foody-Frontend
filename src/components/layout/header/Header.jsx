@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.scss'
+import HeaderMenu from '../headerMenu/HeaderMenu'
 
 export class Header extends Component {
   render() {
@@ -162,44 +163,8 @@ export class Header extends Component {
               </form>
             </nav>
           </section>
-          <section className="header-menu">
-            <ul className="nav">
-              <li className="nav-item active">
-                <Link className="nav-link" to="#">
-                  Trang Chủ
-                </Link>
-                <div className="menu-caret" />
-              </li>
-              <li className="menu-icon">/</li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Sản Phẩm
-                </Link>
-                <div className="menu-caret" />
-              </li>
-              <li className="menu-icon">/</li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Tin Tức
-                </Link>
-                <div className="menu-caret" />
-              </li>
-              <li className="menu-icon">/</li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Giới thiệu
-                </Link>
-                <div className="menu-caret" />
-              </li>
-              <li className="menu-icon">/</li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Liên hệ
-                </Link>
-                <div className="menu-caret" />
-              </li>
-            </ul>
-          </section>
+          {/*Header-Menu*/}
+          <HeaderMenu />
         </div>
       </header>
     )

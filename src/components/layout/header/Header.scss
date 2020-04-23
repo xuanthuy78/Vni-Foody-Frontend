@@ -47,9 +47,10 @@ $hover-color: white;
     }
   }
   .header-menu {
+    border-bottom: 1px solid rgb(235, 234, 234);
     .nav {
       background: #ffff !important;
-      .active,
+      .selected,
       .nav-item:hover {
         background: $menu-backgroud;
         .nav-link {
@@ -82,16 +83,14 @@ $hover-color: white;
       .nav-item {
         position: relative;
         .nav-link {
-          color: black !important;
+          color: black;
           &:hover {
             color: $hover-color !important;
           }
         }
       }
-      .active {
-        .nav-link {
-          color: $hover-color !important;
-        }
+      .selected {
+        color: $hover-color !important;
       }
       .menu-icon {
         padding: 0.5rem 0.9rem;
