@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomePage, ProductPage } from '../containers/pages'
+import { HomePage, ProductPage, NewsPage } from '../containers/pages'
 
 const routes = [
   {
@@ -11,6 +11,11 @@ const routes = [
     path: '/product',
     exact: true,
     main: () => <ProductPage />,
+  },
+  {
+    path: '/news',
+    exact: true,
+    main: () => <NewsPage />,
   },
 ]
 
