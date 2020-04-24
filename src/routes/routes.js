@@ -1,5 +1,6 @@
 import React from 'react'
-import { HomePage, ProductPage, NewsPage } from '../containers/pages'
+import { HomePage, ProductPage, NewsPage, IntroducePage } from '../containers/pages'
+import IntroduceDetailPage from '../containers/pages/introduceDetailPage/IntroduceDetailPage'
 
 const routes = [
   {
@@ -16,6 +17,16 @@ const routes = [
     path: '/news',
     exact: true,
     main: () => <NewsPage />,
+  },
+  {
+    path: '/introduce',
+    exact: true,
+    main: () => <IntroducePage/>
+  },
+  {
+    path: '/introduce-detail/:title',
+    exact: true,
+    main: ({match, history}) => <IntroduceDetailPage  match={match} history={history} />
   },
 ]
 

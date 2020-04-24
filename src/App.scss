@@ -3,7 +3,7 @@ $link-color: black;
 $menu-backgroud: rgb(215, 75, 51);
 // sidebar dung design chung
 .sidebar-components {
-  background: rgb(246, 246, 246);
+  background: white;
   position: relative;
   border: 1px solid $edge-boder;
   .title {
@@ -39,7 +39,10 @@ $menu-backgroud: rgb(215, 75, 51);
     > .nav-item {
       border-bottom: 1px dashed rgb(217, 217, 217) !important;
       > .nav-link {
-        color: $menu-backgroud;
+        color: rgb(68, 68, 68);
+        &:hover {
+          color: $menu-backgroud;
+        }
         .fa {
           margin-right: 5px;
         }

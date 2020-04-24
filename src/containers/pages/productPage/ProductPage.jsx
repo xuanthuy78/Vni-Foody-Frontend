@@ -13,10 +13,16 @@ export class ProductPage extends Component {
         <div className="product-page">
           <div className="container">
             <div className="row product-top">
-              <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+              <div
+                id="first"
+                className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12"
+              >
                 <Sidebar></Sidebar>
               </div>
-              <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+              <div
+                id="second"
+                className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12"
+              >
                 <div className="main-product">
                   <div className="menu-title">
                     <ul className="nav">
