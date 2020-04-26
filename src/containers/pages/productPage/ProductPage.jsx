@@ -27,7 +27,7 @@ export class ProductPage extends Component {
                   <div className="menu-title">
                     <ul className="nav">
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/">
                           Trang chủ
                         </Link>
                       </li>

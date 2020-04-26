@@ -1,5 +1,12 @@
 import React from 'react'
-import { HomePage, ProductPage, NewsPage, IntroducePage } from '../containers/pages'
+import {
+  HomePage,
+  ProductPage,
+  NewsPage,
+  IntroducePage,
+  NewsCategoryPages,
+  NewsDetailPage,
+} from '../containers/pages'
 import IntroduceDetailPage from '../containers/pages/introduceDetailPage/IntroduceDetailPage'
 
 const routes = [
@@ -19,14 +26,26 @@ const routes = [
     main: () => <NewsPage />,
   },
   {
+    path: '/news-category',
+    exact: true,
+    main: () => <NewsCategoryPages />,
+  },
+  {
+    path: '/news-detail',
+    exact: true,
+    main: () => <NewsDetailPage />,
+  },
+  {
     path: '/introduce',
     exact: true,
-    main: () => <IntroducePage/>
+    main: () => <IntroducePage />,
   },
   {
     path: '/introduce-detail/:title',
     exact: true,
-    main: ({match, history}) => <IntroduceDetailPage  match={match} history={history} />
+    main: ({ match, history }) => (
+      <IntroduceDetailPage match={match} history={history} />
+    ),
   },
 ]
 

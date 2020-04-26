@@ -7,8 +7,6 @@ import SidebarIntroduce from '../../../components/introduce/sidebarIntroduce/Sid
 
 export class IntroduceDetailPage extends Component {
   render() {
-    console.log(this.props.match.params.title)
-
     return (
       <MasterLayout>
         <div className="container">

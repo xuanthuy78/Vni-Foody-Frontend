@@ -14,7 +14,7 @@ export class News extends Component {
           />
         </div>
         <div className="news-title">
-          <Link to="#" className="link-title">
+          <Link to="/news-detail" className="link-title">
             Tặng 1 bánh pizza miễn phí cho ngày sinh nhật của bạn
           </Link>
         </div>

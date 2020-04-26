@@ -4,8 +4,8 @@ import { MasterLayout } from '../../../components/layout'
 import { Partner } from '../../../components/product/partner/Partner'
 import TopNews from '../../../components/home/topNews/TopNews'
 import { Link } from 'react-router-dom'
-import NewsItem from '../../../components/news/newsItem/NewsItem'
 import { Pagination } from 'antd'
+import { NewsSidebarMenu, NewsItem } from '../../../components/news'
 
 export class NewsPage extends Component {
   render() {
@@ -19,7 +19,7 @@ export class NewsPage extends Component {
                   <div className="news-menu menu-title">
                     <ul className="nav">
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/">
                           Trang chủ
                         </Link>
                       </li>
@@ -57,27 +57,8 @@ export class NewsPage extends Component {
               </div>
               <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                 <div className="news-sidebar">
-                  <div className="news-sidebar-top sidebar-components">
-                    <h3 className="title">
-                      Sản phẩm
-                      <i
-                        className="fa fa-bars float-right"
-                        aria-hidden="true"
-                      />
-                    </h3>
-                    <ul className="nav nav-pills flex-column menu-main">
-                      <li className="nav-item">
-                        <Link className="nav-link" to="#">
-                          Tin khuyến mãi
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="#">
-                          Tin ẩm thực
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                  {/*News-sidebar-top-Menu*/}
+                  <NewsSidebarMenu />
                   {/*News-sidebar-bottom*/}
                   <TopNews />
                 </div>
