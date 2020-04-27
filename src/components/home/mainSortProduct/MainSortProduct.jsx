@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './MainSortProduct.scss'
 
 export class MainSortProduct extends Component {
   render() {

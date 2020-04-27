@@ -21,7 +21,7 @@ export class IntroduceDetailPage extends Component {
                     <div className="menu-title">
                       <ul className="nav">
                         <li className="nav-item">
-                          <Link className="nav-link" to="#">
+                          <Link className="nav-link" to="/">
                             Trang chủ
                           </Link>
                         </li>
@@ -32,7 +32,7 @@ export class IntroduceDetailPage extends Component {
                           ></i>
                         </li>
                         <li className="nav-item">
-                          <Link className="nav-link" to="#">
+                          <Link className="nav-link" to="/introduce">
                             <span>Giới thiệu</span>
                           </Link>
                         </li>

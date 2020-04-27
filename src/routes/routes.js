@@ -6,8 +6,9 @@ import {
   IntroducePage,
   NewsCategoryPages,
   NewsDetailPage,
+  ProductCategoryPage,
+  IntroduceDetailPage,
 } from '../containers/pages'
-import IntroduceDetailPage from '../containers/pages/introduceDetailPage/IntroduceDetailPage'
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     path: '/product',
     exact: true,
     main: () => <ProductPage />,
+  },
+  {
+    path: '/product-category',
+    exact: true,
+    main: () => <ProductCategoryPage />,
   },
   {
     path: '/news',
