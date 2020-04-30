@@ -7,7 +7,7 @@ export class NewsItem extends Component {
     return (
       <div className="news-item">
         <div className="item-img">
-          <Link to="#">
+          <Link to="/news-detail">
             <img
               src={'assets/images/supreme_pizza_large.jpg'}
               alt="Smiley face"
