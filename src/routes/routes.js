@@ -9,6 +9,8 @@ import {
   ProductCategoryPage,
   IntroduceDetailPage,
 } from '../containers/pages'
+import ContactPage from '../containers/pages/contactpage/ContactPage'
+
 
 const routes = [
   {
@@ -52,6 +54,11 @@ const routes = [
     main: ({ match, history }) => (
       <IntroduceDetailPage match={match} history={history} />
     ),
+  },
+  {
+    path: '/ContactPage',
+    exact: true,
+    main: () => < ContactPage/> ,
   },
 ]
 

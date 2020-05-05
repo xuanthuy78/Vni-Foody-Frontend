@@ -1,0 +1,25 @@
+$hover-color: rgb(215, 75, 51);
+$menu-backgroud: rgb(215, 75, 51);
+.main-menu {
+  margin-bottom: 5px;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: 0px;
+        color: gray;
+        &:hover {
+          color: $menu-backgroud;
+        }
+      }
+    }
+    .icon-link {
+      padding: 0 10px;
+    }
+    .active {
+      .nav-link {
+        color: $menu-backgroud !important;
+        font-weight: bold;
+      }
+    }
+  }
+}
