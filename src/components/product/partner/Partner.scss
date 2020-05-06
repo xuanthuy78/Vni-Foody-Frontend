@@ -7,6 +7,12 @@ $color-black: black;
         opacity: 1 !important;
       }
     }
+    .owl-stage-outer {
+      .owl-stage {
+        display: flex;
+        align-items: center;
+      }
+    }
     .owl-nav {
       transition: all 0.5s ease-out !important;
       opacity: 0 !important;
