@@ -1,0 +1,42 @@
+$backgroud-cart: #aaaaaa;
+$backgroud-title: rgb(215, 75, 51);
+.pay {
+  margin: 30px 0;
+  .pay-content {
+    margin: 30px 0;
+    .row {
+      margin: 0 !important;
+      .payment-step {
+        padding-right: 3px !important;
+        padding-left: 0 !important;
+      }
+    }
+    .box {
+      .title {
+        background: $backgroud-title;
+        padding: 5px;
+        color: white;
+      }
+      .border {
+        min-height: 580px;
+      }
+    }
+    .user {
+      .infor-pay {
+        .line {
+          position: relative;
+          margin-right: 10px;
+          &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 20px;
+            background: $backgroud-cart;
+            top: 0px;
+            right: -6px;
+          }
+        }
+      }
+    }
+  }
+}

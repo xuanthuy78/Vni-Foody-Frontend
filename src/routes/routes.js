@@ -9,6 +9,7 @@ import {
   ProductCategoryPage,
   IntroduceDetailPage,
   ShoppingCartPage,
+  PayShoppingPage,
 } from '../containers/pages'
 
 const routes = [
@@ -58,6 +59,11 @@ const routes = [
     path: '/shopping-cart',
     exact: true,
     main: () => <ShoppingCartPage />,
+  },
+  {
+    path: '/pay-shopping',
+    exact: true,
+    main: () => <PayShoppingPage />,
   },
 ]
 

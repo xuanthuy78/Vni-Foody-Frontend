@@ -7,6 +7,7 @@ import NewsCategoryPages from './newsCategoryPages/NewsCategoryPages'
 import NewsDetailPage from './newsDetailPage/NewsDetailPage'
 import ProductCategoryPage from './productCategoryPage/ProductCategoryPage'
 import ShoppingCartPage from './shoppingCartPage/ShoppingCartPage'
+import PayShoppingPage from './payShoppingPage/PayShoppingPage'
 
 export {
   HomePage,
@@ -18,4 +19,5 @@ export {
   NewsDetailPage,
   ProductCategoryPage,
   ShoppingCartPage,
+  PayShoppingPage
 }
