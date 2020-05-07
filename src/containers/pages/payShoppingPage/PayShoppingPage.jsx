@@ -27,18 +27,22 @@ export class PayShoppingPage extends Component {
                     <div className="user-infor border">
                       <div className="infor-pay">
                         <h6>THÔNG TIN THANH TOÁN</h6>
-                        <Link className="line" to="">
+                        <Link className="link line" to="#">
                           Đăng ký tài khoản mua hàng
                         </Link>
-                        <Link to="">Đăng nhập</Link>
+                        <Link className="link" to="#">
+                          Đăng nhập
+                        </Link>
                       </div>
                       <div className="infor-form">
-                        <div className="form-group">
-                          <label>Mua hàng không cần tài khoản</label>
+                        <div className="form-group mt-2">
+                          <label className="bold">
+                            Mua hàng không cần tài khoản
+                          </label>
                           <input
                             type="text"
                             className="form-control"
-                            placeholder="Enter Họ và Tên"
+                            placeholder="Họ và Tên"
                             id="name"
                           />
                         </div>
@@ -46,7 +50,7 @@ export class PayShoppingPage extends Component {
                           <input
                             type="number"
                             className="form-control"
-                            placeholder="Enter number"
+                            placeholder="Số điện thoại"
                             id="number"
                           />
                         </div>
@@ -54,7 +58,7 @@ export class PayShoppingPage extends Component {
                           <input
                             type="email"
                             className="form-control"
-                            placeholder="Enter email"
+                            placeholder="Email"
                             id="email"
                           />
                         </div>
@@ -62,13 +66,13 @@ export class PayShoppingPage extends Component {
                           <input
                             type="text"
                             className="form-control"
-                            placeholder="Enter address"
+                            placeholder="Địa chỉ"
                             id="address"
                           />
                         </div>
                         <div className="form-group">
                           <select className="form-control" id="sel1">
-                            <option>1</option>
+                            <option>Vui lòng chọn tỉnh/thành phố</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
@@ -76,7 +80,7 @@ export class PayShoppingPage extends Component {
                         </div>
                         <div className="form-group">
                           <select className="form-control" id="sel2">
-                            <option>1</option>
+                            <option>Vui lòng chọn quận/huyện</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
@@ -85,14 +89,15 @@ export class PayShoppingPage extends Component {
                         <div className="form-group">
                           <textarea
                             className="form-control"
+                            placeholder="Ghi chú đơn hàng"
                             rows="4"
                             id="comment"
                           ></textarea>
                         </div>
-                        <div className="form-check">
-                          <label>THÔNG TIN GIAO HÀNG</label>
+                        <div className="form-group">
+                          <label className="bold"> THÔNG TIN GIAO HÀNG</label>
                         </div>
-                        <div className="form-check">
+                        <div className="form-check mb-2">
                           <label className="form-check-label">
                             <input
                               type="checkbox"
@@ -108,7 +113,7 @@ export class PayShoppingPage extends Component {
                             <input
                               type="text"
                               className="form-control"
-                              placeholder="Enter Họ và Tên"
+                              placeholder="Họ và Tên"
                               id="name"
                             />
                           </div>
@@ -116,7 +121,7 @@ export class PayShoppingPage extends Component {
                             <input
                               type="number"
                               className="form-control"
-                              placeholder="Enter number"
+                              placeholder="Số điện thoại"
                               id="number"
                             />
                           </div>
@@ -124,13 +129,21 @@ export class PayShoppingPage extends Component {
                             <input
                               type="email"
                               className="form-control"
-                              placeholder="Enter email"
+                              placeholder="Email"
                               id="email"
                             />
                           </div>
                           <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control"
+                              placeholder="Địa chỉ"
+                              id="address"
+                            />
+                          </div>
+                          <div className="form-group">
                             <select className="form-control" id="sel1">
-                              <option>1</option>
+                              <option>Vui lòng chọn tỉnh/thành phố</option>
                               <option>2</option>
                               <option>3</option>
                               <option>4</option>
@@ -138,7 +151,7 @@ export class PayShoppingPage extends Component {
                           </div>
                           <div className="form-group">
                             <select className="form-control" id="sel2">
-                              <option>1</option>
+                              <option>Vui lòng chọn quận/huyện</option>
                               <option>2</option>
                               <option>3</option>
                               <option>4</option>
@@ -156,16 +169,16 @@ export class PayShoppingPage extends Component {
                     </div>
                     <div className="train-infor border">
                       <div className="form-group">
-                        <label>VẬN CHUYỂN </label>
+                        <label className="bold">VẬN CHUYỂN </label>
                         <select className="form-control" id="sel1">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
+                          <option>Hình thức vận chuyển </option>
+                          <option>J&T Express</option>
+                          <option>Viettel Post</option>
+                          <option>Ninja Van</option>
                         </select>
                       </div>
                       <div className="form-group">
-                        <label>THANH TOÁN </label>
+                        <label className="bold">THANH TOÁN </label>
                       </div>
                     </div>
                   </div>
@@ -175,25 +188,36 @@ export class PayShoppingPage extends Component {
                     <div className="title">
                       <span>3. THÔNG TIN ĐƠN HÀNG</span>
                     </div>
-                    <div className="train-infor border">
-                      <div className="name">
-                        <span>Image</span>
-                        <span>Xà lách trộn kiểu Nga x 1</span>
-                        <span>59,000 ₫</span>
+                    <div className="cart-infor border">
+                      <div className="name line-bottom ">
+                        <div className="image parent">
+                          <Link to="#">
+                            <img
+                              className="child"
+                              src={'assets/images/sup_cua_large.jpg'}
+                              alt=""
+                            />
+                          </Link>
+                        </div>
+                        <div className="product">Xà lách trộn kiểu Nga x 1</div>
+                        <div className="price">59,000 ₫</div>
                       </div>
-                      <div className="total-price">
-                        <span>Thành Tiền</span>
-                        <span>59,000 ₫</span>
+                      <div className="total-price line-bottom ">
+                        <span className="bold">Thành Tiền</span>
+                        <span className="float-right">59,000 ₫</span>
                       </div>
-                      <div className="shiping-price">
-                        <span>Phí vận chuyển</span>
-                        <span>0 ₫</span>
+                      <div className="shiping-price line-bottom ">
+                        <span className="bold">Phí vận chuyển</span>
+                        <span className="float-right">0 ₫</span>
                       </div>
-                      <div className="total-payment">
-                        <span>Thanh Toán</span>
-                        <span>0 ₫</span>
+                      <div className="total-payment line-bottom ">
+                        <span className="bold">Thanh Toán</span>
+                        <span className="float-right">0 ₫</span>
                       </div>
-                      <button type="button" class="btn btn-dark">
+                      <button
+                        type="button"
+                        className="btn btn-dark float-right mt-3"
+                      >
                         ĐẶT HÀNG
                       </button>
                     </div>
