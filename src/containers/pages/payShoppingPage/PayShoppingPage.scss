@@ -71,6 +71,15 @@ $backgroud-title: rgb(215, 75, 51);
             }
           }
         }
+        .total-payment {
+          .sum {
+            color: $backgroud-title;
+            font-size: 20px;
+          }
+        }
+        .clearfix {
+          clear: both;
+        }
       }
     }
   }

@@ -200,26 +200,28 @@ export class PayShoppingPage extends Component {
                           </Link>
                         </div>
                         <div className="product">Xà lách trộn kiểu Nga x 1</div>
-                        <div className="price">59,000 ₫</div>
+                        <div className="price bold">59,000 ₫</div>
                       </div>
                       <div className="total-price line-bottom ">
                         <span className="bold">Thành Tiền</span>
-                        <span className="float-right">59,000 ₫</span>
+                        <span className="float-right bold">59,000 ₫</span>
                       </div>
                       <div className="shiping-price line-bottom ">
                         <span className="bold">Phí vận chuyển</span>
-                        <span className="float-right">0 ₫</span>
+                        <span className="float-right bold">0 ₫</span>
                       </div>
                       <div className="total-payment line-bottom ">
                         <span className="bold">Thanh Toán</span>
-                        <span className="float-right">0 ₫</span>
+                        <span className="sum float-right bold mb-3">0 ₫</span>
                       </div>
-                      <button
-                        type="button"
-                        className="btn btn-dark float-right mt-3"
-                      >
-                        ĐẶT HÀNG
-                      </button>
+                      <div className="clearfix">
+                        <button
+                          type="button"
+                          className="btn btn-dark float-right mt-3"
+                        >
+                          ĐẶT HÀNG
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
