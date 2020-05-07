@@ -6,6 +6,7 @@ import IntroduceDetailPage from './introduceDetailPage/IntroduceDetailPage'
 import NewsCategoryPages from './newsCategoryPages/NewsCategoryPages'
 import NewsDetailPage from './newsDetailPage/NewsDetailPage'
 import ProductCategoryPage from './productCategoryPage/ProductCategoryPage'
+import ShoppingCartPage from './shoppingCartPage/ShoppingCartPage'
 
 export {
   HomePage,
@@ -16,4 +17,5 @@ export {
   IntroduceDetailPage,
   NewsDetailPage,
   ProductCategoryPage,
+  ShoppingCartPage,
 }

@@ -8,6 +8,7 @@ import {
   NewsDetailPage,
   ProductCategoryPage,
   IntroduceDetailPage,
+  ShoppingCartPage,
 } from '../containers/pages'
 
 const routes = [
@@ -52,6 +53,11 @@ const routes = [
     main: ({ match, history }) => (
       <IntroduceDetailPage match={match} history={history} />
     ),
+  },
+  {
+    path: '/shopping-cart',
+    exact: true,
+    main: () => <ShoppingCartPage />,
   },
 ]
 
