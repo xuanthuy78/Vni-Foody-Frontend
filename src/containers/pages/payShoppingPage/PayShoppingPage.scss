@@ -53,7 +53,7 @@ $backgroud-title: rgb(215, 75, 51);
       .cart-infor {
         .line-bottom {
           padding: 10px 0;
-          border-bottom: 1px solid $backgroud-cart;
+          border-bottom: 1px solid rgb(235, 234, 234);
         }
         .name {
           display: flex;
@@ -75,6 +75,16 @@ $backgroud-title: rgb(215, 75, 51);
           .sum {
             color: $backgroud-title;
             font-size: 20px;
+          }
+        }
+        .button {
+          .btn {
+            border-radius: 0;
+            font-size: 12px;
+            &:hover {
+              background: $backgroud-title;
+              border: 1px solid $backgroud-title;
+            }
           }
         }
         .clearfix {

@@ -19,7 +19,7 @@ export class PayShoppingPage extends Component {
           <div className="pay-content">
             <form>
               <div className="row">
-                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 payment-step">
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 payment-step">
                   <div className="user box">
                     <div className="title">
                       <span>1. ĐỊA CHỈ THANH TOÁN VÀ GIAO HÀNG</span>
@@ -48,7 +48,7 @@ export class PayShoppingPage extends Component {
                         </div>
                         <div className="form-group">
                           <input
-                            type="number"
+                            type="text"
                             className="form-control"
                             placeholder="Số điện thoại"
                             id="number"
@@ -119,7 +119,7 @@ export class PayShoppingPage extends Component {
                           </div>
                           <div className="form-group">
                             <input
-                              type="number"
+                              type="text"
                               className="form-control"
                               placeholder="Số điện thoại"
                               id="number"
@@ -162,7 +162,7 @@ export class PayShoppingPage extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 payment-step">
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 payment-step">
                   <div className="train box">
                     <div className="title">
                       <span>2. THANH TOÁN VÀ VẬN CHUYỂN</span>
@@ -183,7 +183,7 @@ export class PayShoppingPage extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 payment-step">
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 payment-step">
                   <div className="product box">
                     <div className="title">
                       <span>3. THÔNG TIN ĐƠN HÀNG</span>
@@ -214,7 +214,7 @@ export class PayShoppingPage extends Component {
                         <span className="bold">Thanh Toán</span>
                         <span className="sum float-right bold mb-3">0 ₫</span>
                       </div>
-                      <div className="clearfix">
+                      <div className="clearfix button">
                         <button
                           type="button"
                           className="btn btn-dark float-right mt-3"
