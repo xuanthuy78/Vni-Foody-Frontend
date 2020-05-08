@@ -215,12 +215,12 @@ export class PayShoppingPage extends Component {
                         <span className="sum float-right bold mb-3">0 ₫</span>
                       </div>
                       <div className="clearfix button">
-                        <button
-                          type="button"
+                        <Link
+                          to="/finish"
                           className="btn btn-dark float-right mt-3"
                         >
                           ĐẶT HÀNG
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
