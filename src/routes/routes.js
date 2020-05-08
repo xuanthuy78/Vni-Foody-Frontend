@@ -10,6 +10,7 @@ import {
   IntroduceDetailPage,
   ShoppingCartPage,
   PayShoppingPage,
+  FinishShoppingPage
 } from '../containers/pages'
 
 const routes = [
@@ -64,6 +65,11 @@ const routes = [
     path: '/pay-shopping',
     exact: true,
     main: () => <PayShoppingPage />,
+  },
+  {
+    path: '/finish',
+    exact: true,
+    main: () => <FinishShoppingPage />,
   },
 ]
 

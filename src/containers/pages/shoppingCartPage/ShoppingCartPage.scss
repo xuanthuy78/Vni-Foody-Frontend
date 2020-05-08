@@ -72,27 +72,6 @@ $backgroud-active: rgb(215, 75, 51);
           color: $backgroud-active;
         }
       }
-      .total-pay {
-        .btn {
-          font-size: 11px !important;
-          font-weight: 600;
-          border-radius: 0 !important;
-        }
-        .continue {
-          &:hover {
-            background: $backgroud-active;
-            border: 1px solid $backgroud-active;
-          }
-        }
-        .pay {
-          background: $backgroud-active;
-          &:hover {
-            background: black;
-            color: $backgroud-active;
-            border: 1px solid black;
-          }
-        }
-      }
     }
   }
 }
