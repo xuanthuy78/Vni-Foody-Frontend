@@ -10,8 +10,11 @@ import {
   IntroduceDetailPage,
   ShoppingCartPage,
   PayShoppingPage,
-  FinishShoppingPage
+  FinishShoppingPage,
+ 
 } from '../containers/pages'
+import ProducDetailPage from '../containers/pages/producDetailPage/ProducDetailPage'
+
 
 const routes = [
   {
@@ -71,6 +74,11 @@ const routes = [
     exact: true,
     main: () => <FinishShoppingPage />,
   },
+  {
+    path: '/productdetail',
+    exact: true,
+    main: () => <ProducDetailPage/>,
+  }
 ]
 
 export default routes
