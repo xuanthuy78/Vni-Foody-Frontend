@@ -8,7 +8,11 @@ import {
   NewsDetailPage,
   ProductCategoryPage,
   IntroduceDetailPage,
+ 
+
 } from '../containers/pages'
+import ProducDetailPage from '../containers/pages/producDetailPage/ProducDetailPage'
+
 
 const routes = [
   {
@@ -52,6 +56,11 @@ const routes = [
     main: ({ match, history }) => (
       <IntroduceDetailPage match={match} history={history} />
     ),
+  },
+  {
+    path: '/productdetail',
+    exact: true,
+    main: () => <ProducDetailPage/>,
   },
 ]
 
