@@ -10,7 +10,8 @@ import {
   IntroduceDetailPage,
   ShoppingCartPage,
   PayShoppingPage,
-  FinishShoppingPage
+  FinishShoppingPage,
+  HomeAdminPage
 } from '../containers/pages'
 
 const routes = [
@@ -71,6 +72,11 @@ const routes = [
     exact: true,
     main: () => <FinishShoppingPage />,
   },
+  {
+    path: '/admin',
+    exact: true,
+    main: () => <HomeAdminPage />,
+  }
 ]
 
 export default routes
