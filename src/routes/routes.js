@@ -8,10 +8,14 @@ import {
   NewsDetailPage,
   ProductCategoryPage,
   IntroduceDetailPage,
- 
+  ShoppingCartPage,
+  PayShoppingPage,
+  FinishShoppingPage
 
 } from '../containers/pages'
 import ProducDetailPage from '../containers/pages/producDetailPage/ProducDetailPage'
+import LoginPage from '../containers/pages/loginPage/LoginPage'
+  
 
 
 const routes = [
@@ -62,6 +66,27 @@ const routes = [
     exact: true,
     main: () => <ProducDetailPage/>,
   },
+  {
+    path: '/shopping-cart',
+    exact: true,
+    main: () => <ShoppingCartPage />,
+  },
+  {
+    path: '/pay-shopping',
+    exact: true,
+    main: () => <PayShoppingPage />,
+  },
+  {
+    path: '/finish',
+    exact: true,
+    main: () => <FinishShoppingPage />,
+
+  },
+  {
+    path: '/LoginPage',
+    exact: true,
+    main: () => < LoginPage / > ,
+},
 ]
 
 export default routes

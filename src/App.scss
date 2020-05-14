@@ -87,6 +87,27 @@ $menu-backgroud: rgb(215, 75, 51);
     }
   }
 }
+.button-same {
+  .btn {
+    font-size: 11px !important;
+    font-weight: 600;
+    border-radius: 0 !important;
+  }
+  .continue {
+    &:hover {
+      background: $menu-backgroud;
+      border: 1px solid $menu-backgroud;
+    }
+  }
+  .pay {
+    background: $menu-backgroud;
+    &:hover {
+      background: black;
+      color: $menu-backgroud;
+      border: 1px solid black;
+    }
+  }
+}
 //format chung phân trang
 .ant-pagination-prev,
 .ant-pagination-next,
