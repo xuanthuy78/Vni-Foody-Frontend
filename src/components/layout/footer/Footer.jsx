@@ -13,7 +13,7 @@ export class Footer extends Component {
         <section className="footer-conter">
           <div className="container">
             <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <h4 className="title">GIỚI THIỆU</h4>
                 <div className="content">
                   <ul className="content-list">
@@ -45,7 +45,7 @@ export class Footer extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                 <h4 className="title">CHĂM SÓC KHÁCH HÀNG</h4>
                 <div className="content">
                   <ul className="content-list">
@@ -67,7 +67,7 @@ export class Footer extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 link">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 link">
                 <h4 className="title">FACEBOOK</h4>
                 <div className="content">
                   <ul className="nav">
