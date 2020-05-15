@@ -13,7 +13,9 @@ import {
   FinishShoppingPage,
  
 } from '../containers/pages'
-import ProducDetailPage from '../containers/pages/producDetailPage/ProducDetailPage'
+import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetailPage'
+import CartPage from '../containers/pages/cartPage/CartPage'
+
 
 
 const routes = [
@@ -78,6 +80,11 @@ const routes = [
     path: '/productdetail',
     exact: true,
     main: () => <ProducDetailPage/>,
+  },
+  {
+    path: '/cart',
+    exact: true,
+    main: () => <CartPage/>,
   }
 ]
 

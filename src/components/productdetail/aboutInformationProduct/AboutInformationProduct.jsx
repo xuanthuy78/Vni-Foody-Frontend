@@ -29,12 +29,12 @@ export class AboutInformationProduct extends Component {
              <div className="social-medial">
                <div className="like">
                   <div className="like-button">
-                    <button className=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like 4</button>
+                    <button ><i className="fa fa-thumbs-o-up" aria-hidden="true"></i> Like 4</button>
                   </div>
                </div>
                <div className="share">
                   <div className="share-button">
-                    <button className="">Share</button>
+                    <button >Share</button>
                   </div>
                </div>
                <div className="right-button">
@@ -49,8 +49,8 @@ export class AboutInformationProduct extends Component {
                </div>
              </div>
              <div className="button-card" >
-                <Link To="#"className="btn btn-dark"><i className="fa fa-shopping-cart" aria-hidden="true"></i> Thêm giỏ hàng</Link>
-                <Link To="#"  className="btn btn-danger"><i className="fa fa-check" aria-hidden="true"></i> Mua ngay</Link>
+                <Link to="#"className="btn btn-dark"><i className="fa fa-shopping-cart" aria-hidden="true"></i> Thêm giỏ hàng</Link>
+                <Link to="#"  className="btn btn-danger"><i className="fa fa-check" aria-hidden="true"></i> Mua ngay</Link>
              </div>
              <div className="call">
                <p className="title">Để lại số điện thoại, chúng tôi sẽ tư vấn ngay sau từ 5 › 10 phút</p>
