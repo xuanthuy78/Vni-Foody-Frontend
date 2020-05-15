@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react'
 import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
+import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
 import './LoginPage.scss'
 import {
-    SidebarLogin,
+ 
     MenuLogin,
     InformationLogin,
 
@@ -16,7 +17,7 @@ export class LoginPage extends Component {
           <div className="container">
             <div className="row">
               <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-               <SidebarLogin/>
+               <SidebarAccount/>
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                 <  MenuLogin/>
