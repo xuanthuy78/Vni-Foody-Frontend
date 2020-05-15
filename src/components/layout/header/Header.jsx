@@ -27,7 +27,7 @@ export class Header extends Component {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/shopping-cart">
                           <i className="fa fa-shopping-cart" />
                           Giỏ hàng
                         </Link>
@@ -39,7 +39,7 @@ export class Header extends Component {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/RegisterPage">
                           <i className="fa fa-key" />
                           Đăng ký
                         </Link>
