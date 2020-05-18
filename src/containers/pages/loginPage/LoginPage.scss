@@ -1,11 +1,65 @@
-.login-menu {
-  margin-top: 23px;
-  .nav {
-    .icon-link {
-      margin-left: 10px;
+.login-content {
+  .login-menu {
+    margin-top: 25px;
+    .nav {
+      .icon-link {
+        margin-left: 10px;
+      }
+      .active {
+        margin-left: 10px;
+      }
     }
-    .active {
-      margin-left: 10px;
+  }
+  .login-information {
+    h1 {
+      border-bottom: 1px solid #d74b33;
+      .title {
+        border-bottom: 1px solid #d74b33;
+        line-height: 21px !important;
+        font-weight: 100 !important;
+        margin-bottom: 10px;
+        margin-top: 0px;
+      }
+      span {
+        background: #d74b33 none repeat scroll 0 0;
+        color: #fff;
+        font-size: 17px;
+        padding: 7px 12px;
+        position: relative;
+      }
+    }
+    .form-horizontal {
+      .form-group {
+        display: flex;
+        align-items: center;
+        .control-label {
+          font-weight: bold;
+          text-align: end;
+        }
+
+        .button-login {
+          .btn-primary {
+            border-radius: 0;
+            color: #ffffff;
+            border: none;
+            padding: 9px 15px;
+            margin-bottom: 0;
+            font-size: 12px;
+            line-height: 1.42857143;
+            background-color: #d74b33;
+            color: #ffffff;
+            &:hover {
+              background-color: black;
+            }
+          }
+          .forgetpassword {
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #d74b33;
+            margin-left: 10px;
+          }
+        }
+      }
     }
   }
 }
