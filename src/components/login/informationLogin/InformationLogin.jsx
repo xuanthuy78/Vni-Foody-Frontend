@@ -25,7 +25,7 @@ export class InformationLogin extends Component {
             <div className="form-group">
               <div className=" offset-5 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 button-login">
                 <button type="submit" className="btn btn-primary">Đăng nhập</button>
-                <Link to="#" className=" forgetpassword">Quên mật khẩu?</Link>
+                <Link to="/forgetPassWord" className=" forgetpassword">Quên mật khẩu?</Link>
               </div>
             </div>
           </form>
