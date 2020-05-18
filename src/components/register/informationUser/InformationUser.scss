@@ -1,7 +1,8 @@
-.product-bottom {
+.information-bottom {
   .information-tilte {
     border-bottom: 1px dotted #333;
     margin-top: 20px;
+    margin-left: 110px;
     .title {
       color: #d74b33;
       padding-bottom: 5px;
@@ -15,13 +16,13 @@
   }
   .form-inlineng-pristine {
     margin-top: 20px;
+    margin-left: 100px;
     .form-group {
       display: flex;
       align-items: center;
     }
     .control-label {
       text-align: end;
-      display: inline-block;
       font-weight: bold;
       margin-right: 10px;
       margin: 0px;

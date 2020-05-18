@@ -13,7 +13,6 @@ import {
   FinishShoppingPage
 
 } from '../containers/pages'
-import ProducDetailPage from '../containers/pages/producDetailPage/ProducDetailPage'
 import RegisterPage from '../containers/pages/registerPage/RegisterPage'
 
 
@@ -60,11 +59,6 @@ const routes = [
     main: ({ match, history }) => (
       <IntroduceDetailPage match={match} history={history} />
     ),
-  },
-  {
-    path: '/productdetail',
-    exact: true,
-    main: () => <ProducDetailPage/>,
   },
   {
 

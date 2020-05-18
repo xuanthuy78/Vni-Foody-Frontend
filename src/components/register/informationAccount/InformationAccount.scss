@@ -1,5 +1,5 @@
-.product-bottom {
-  .product-title {
+.register-bottom {
+  .register-title {
     margin-top: 10px;
     border-bottom: 1px solid #d74b33;
     .title {
@@ -12,9 +12,10 @@
       margin: 0px !important;
     }
   }
-  .menu-title {
-    border-bottom: 1px dotted #333;
+  .title-informationaccount {
+    margin-left: 110px;
     .title {
+      border-bottom: 1px dotted #333;
       color: #d74b33;
       padding-bottom: 5px;
       margin-bottom: 10px;
@@ -27,6 +28,7 @@
   }
   .form-horizontal {
     margin-top: 20px;
+    margin-left: 100px;
     .form-group {
       display: flex;
       align-items: center;

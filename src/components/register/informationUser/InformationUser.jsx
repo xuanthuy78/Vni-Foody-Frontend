@@ -5,7 +5,7 @@ import './InformationUser.scss'
 export class InformationUser extends Component {
   render() {
     return (
-        <div className="product-bottom">
+        <div className="information-bottom">
         <div className="information-tilte"><h2><span className="title">Thông tin cá nhân</span></h2></div>
          
           <form className="form-inlineng-pristine" >

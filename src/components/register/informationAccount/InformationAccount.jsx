@@ -5,11 +5,11 @@ import './InformationAccount.scss'
 export class InformationAccount extends Component {
   render() {
     return (
-        <div className="product-bottom">
-           <div className="product-title">
+        <div className="register-bottom">
+           <div className="register-title">
            <h3 className="title">ĐĂNG KÝ TÀI KHOẢN</h3>
            </div>
-           <div className="menu-title">
+           <div className="title-informationaccount">
              <h2 className="title"><span>Thông tin tài khoản</span></h2>
            </div>
           <form className="form-horizontal ">
