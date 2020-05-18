@@ -9,11 +9,20 @@ export class HomeAdminPage extends Component {
         <header className="header">
           <nav className="navbar navbar-expand navbar-light fixed-top">
             <div className="border-logo">
-              <img
-                className="images-logo"
-                src={'assets/images/logo.png'}
-                alt="Logo"
-              />
+              <div className="screen-668">
+                <img
+                  className="images-logo"
+                  src={'assets/images/logo.png'}
+                  alt="Logo"
+                />
+              </div>
+              <div className="screen-mobi">
+                <img
+                  className="images-logo"
+                  src={'assets/images/logo-mobi.png'}
+                  alt="Logo"
+                />
+              </div>
             </div>
             <div className="btn-toggler ml-5">
               <button type="button" className="btn btn-secondary">
@@ -83,7 +92,7 @@ export class HomeAdminPage extends Component {
                       className="mr-3 item fa fa-plus-square-o"
                       aria-hidden="true"
                     ></i>
-                    <span className="title">Created User</span>
+                    <span className="title">Created</span>
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -92,7 +101,7 @@ export class HomeAdminPage extends Component {
                       className="mr-3 item fa fa-pencil-square-o"
                       aria-hidden="true"
                     ></i>
-                    <span className="item title">Edit User</span>
+                    <span className="item title">Edit</span>
                   </Link>
                 </li>
               </ul>
@@ -140,7 +149,7 @@ export class HomeAdminPage extends Component {
                       className="mr-3 item fa fa-pencil-square-o"
                       aria-hidden="true"
                     ></i>
-                    <span className="item title">Edit User</span>
+                    <span className="item title">Edit</span>
                   </Link>
                 </li>
               </ul>
