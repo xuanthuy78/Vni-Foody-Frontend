@@ -27,13 +27,16 @@ $menu-backgroud: rgb(215, 75, 51);
       .nav-link {
         color: #6a6a6a;
         font-weight: normal;
-        border-bottom: 1px dotted #c3c3c3;
+
         display: block;
         position: relative;
         padding: 7px 15px;
         &:hover {
           color: #d74b33;
         }
+      }
+      .icon-border {
+        border-bottom: 1px dotted #c3c3c3;
       }
     }
   }
