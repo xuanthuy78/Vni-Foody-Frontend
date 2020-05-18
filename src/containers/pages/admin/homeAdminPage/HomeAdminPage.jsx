@@ -30,7 +30,8 @@ export class HomeAdminPage extends Component {
               </button>
             </div>
             <div className="information collapse navbar-collapse justify-content-end">
-              <ul className="navbar-nav">
+              {/*Show when screen > 496*/}
+              <ul className="navbar-nav screen-496">
                 <li className="nav-item">
                   <Link className="nav-link" to="#">
                     <span className="badge badge-danger">22</span>
@@ -55,6 +56,34 @@ export class HomeAdminPage extends Component {
                     ></i>
                   </Link>
                 </li>
+              </ul>
+              {/*Show when screen 486*/}
+              <ul className="navbar-nav screen-mobi">
+                <li className="nav-item">
+                  <Link className="nav-link name" to="#">
+                    <i
+                      className="fa fa-user-circle fa-lg"
+                      aria-hidden="true"
+                    ></i>
+                  </Link>
+                </li>
+                <ul className="navbar-nav childen">
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Valerie Luna
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Thông báo
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">
+                      Đăng xuất
+                    </Link>
+                  </li>
+                </ul>
               </ul>
             </div>
           </nav>
