@@ -53,3 +53,43 @@ $menu-backgroud: rgb(215, 75, 51);
     }
   }
 }
+@media (min-width: 992px) and (max-width: 1236px) {
+  .contact-content {
+    .contact-info {
+      margin-left: 100px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-content {
+    .row {
+      display: block;
+    }
+
+    .contact-info {
+      margin-left: 0px;
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-content {
+    .row {
+      display: block;
+    }
+
+    .contact-info {
+      margin-left: 0px;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  .contact-content {
+    .row {
+      display: block;
+    }
+
+    .contact-info {
+      margin-left: 0px;
+    }
+  }
+}

@@ -15,12 +15,12 @@ export class AboutIformationContact extends Component {
       </h1>
         </div>
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
           <div className="contact-image">
           <img src={'assets/images/logo.png'} alt="" className="img-responsive"/>
           </div>
         </div>
-        <div className="col-md-9">
+        <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
           <div className="contact-info">
             <div className="docs"><b className="name ng-binding">CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ RUNTIME</b></div>
             <div className="docs ng-binding">
