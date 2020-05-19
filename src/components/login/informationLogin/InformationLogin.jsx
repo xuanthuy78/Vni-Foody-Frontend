@@ -2,11 +2,10 @@ import React, { Component } from 'react'
 import './InformationLogin.scss'
 import { Link } from 'react-router-dom'
 
-
 export class InformationLogin extends Component {
   render() {
     return (
-       <div className="login-content" >
+      <div className="login-content" >
         <h1 className="title"><span>Đăng nhập hệ thống</span></h1>
         <div className=" ">
           <form className="form-horizontal">

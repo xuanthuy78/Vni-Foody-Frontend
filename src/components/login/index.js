@@ -1,9 +1,3 @@
 import InformationLogin from './informationLogin/InformationLogin'
 
-
-export {
-
- 
-    InformationLogin,
-
-}
+export { InformationLogin, }

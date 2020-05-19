@@ -24,7 +24,7 @@ export class LoginPage extends Component {
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
               <div className="login-menu menu-title">
-               <ul className="nav">
+                <ul className="nav">
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
                         <span>Trang chủ</span>
