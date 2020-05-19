@@ -4,6 +4,8 @@ import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
 import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
 import './LoginPage.scss'
 import { Link } from 'react-router-dom'
+import { Partner } from '../../../components/product/partner/Partner'
+
 
 import {
  
@@ -43,6 +45,7 @@ export class LoginPage extends Component {
                 < InformationLogin />
               </div>
             </div>
+            <Partner />
           </div>
         </section>
       </MasterLayout>
