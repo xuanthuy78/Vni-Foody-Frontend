@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
 import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
+import { Partner } from '../../../components/product/partner/Partner'
+
+
 import { Link } from 'react-router-dom'
 
 import './RegisterPage.scss'
@@ -45,6 +48,7 @@ export class RegisterPage extends Component {
                 
               </div>
             </div>
+            <Partner />
           </div>
         </section>
       </MasterLayout>
