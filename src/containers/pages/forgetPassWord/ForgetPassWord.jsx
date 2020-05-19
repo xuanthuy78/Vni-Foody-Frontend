@@ -4,9 +4,7 @@ import React, { Component } from 'react'
 import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
 import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
 import { Partner } from '../../../components/product/partner/Partner'
-
 import { Link } from 'react-router-dom'
-
 import './ForgetPassWord.scss'
 import {
    
@@ -24,18 +22,15 @@ export class ForgetPassWord extends Component {
                < SidebarAccount/>
               </div>
               <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-              <div className="forgetpassword-menu menu-title">
-                    <ul className="nav">
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/">
-                          Trang chủ
-                        </Link>
+                <div className="forgetpassword-menu menu-title">
+                  <ul className="nav">
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/">
+                         Trang chủ
+                       </Link>
                       </li>
                       <li className="nav-item icon-link">
-                        <i
-                          className="fa fa-angle-double-right"
-                          aria-hidden="true"
-                        ></i>
+                        <i className="fa fa-angle-double-right" aria-hidden="true"/>
                       </li>
                       <li className="nav-item active">
                         <Link className="nav-link" to="#">
@@ -44,10 +39,10 @@ export class ForgetPassWord extends Component {
                       </li>
                     </ul>
                   </div>
-                < InformationConfim />
-              </div>
+                  <InformationConfim/>
+               </div>
             </div>
-            <Partner />
+            <Partner/>
           </div>
         </section>
       </MasterLayout>
