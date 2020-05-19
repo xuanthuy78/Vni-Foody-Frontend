@@ -42,7 +42,7 @@ export class LoginPage extends Component {
                       </li>
                </ul>
               </div>
-                < InformationLogin />
+                <InformationLogin />
               </div>
             </div>
             <Partner />
