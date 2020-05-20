@@ -9,7 +9,7 @@ export class SidebarAccount extends Component {
         <div className="login-title">
            <h3 className="title">Tài khoản<i className="fa fa-bars float-right" aria-hidden="true" /></h3>
         </div>
-         <ul className="nav nav-pills flex-column menu-main">
+        <ul className="nav nav-pills flex-column menu-main">
             <li className="nav-item">
               <Link className="nav-link silebar-border" to="/LoginPage"> <i className="fa fa-sign-out" aria-hidden="true"/>Đăng nhập </Link>
             </li>
@@ -19,7 +19,7 @@ export class SidebarAccount extends Component {
             <li className="nav-item">
               <Link className="nav-link" to="/forgetPassWord"><i className="fa fa-key"/>Quên mật khẩu</Link>
            </li>
-         </ul>
+        </ul>
      </div>
                  
     );
