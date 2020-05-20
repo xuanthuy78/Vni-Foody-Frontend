@@ -21,10 +21,9 @@ export class SidebarAccount extends Component {
            </li>
         </ul>
      </div>
-                      
+                 
     );
-   
   }
 }
-
 export default SidebarAccount
+
