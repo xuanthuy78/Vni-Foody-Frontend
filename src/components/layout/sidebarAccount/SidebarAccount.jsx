@@ -11,13 +11,13 @@ export class SidebarAccount extends Component {
         </div>
         <ul className="nav nav-pills flex-column menu-main">
             <li className="nav-item">
-              <Link className="nav-link silebar-border" to="/LoginPage"> <i className="fa fa-sign-out" aria-hidden="true"/>Đăng nhập </Link>
+              <Link className="nav-link silebar-border " to="/LoginPage"> <i className="fa fa-sign-out " aria-hidden="true"/><span className="icon-text">Đăng nhập </span></Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link silebar-border" to="/RegisterPage"><i className="fa fa-key" aria-hidden="true"/> Đăng ký</Link> 
+              <Link className="nav-link silebar-border" to="/RegisterPage"> <i className="fa fa-key " aria-hidden="true"/><span className="icon-text">Đăng ký</span></Link> 
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/forgetPassWord"><i className="fa fa-key"/>Quên mật khẩu</Link>
+              <Link className="nav-link" to="/forgetPassWord"> <i className="fa fa-key "/><span className="icon-text">Quên mật khẩu</span></Link>
            </li>
         </ul>
      </div>

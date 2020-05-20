@@ -6,8 +6,8 @@ export class InformationLogin extends Component {
   render() {
     return (
       <div className="login-content" >
-        <h1 className="title"><span>Đăng nhập hệ thống</span></h1>
-        <div className=" ">
+        <h1 className="title"><span>ĐĂNG NHẬP HỆ THỐNG</span></h1>
+        <div className="infomation-login ">
           <form className="form-horizontal">
             <div className="form-group">
               <label className="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 control-label">Email</label>
