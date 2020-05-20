@@ -1,0 +1,30 @@
+.script-product {
+    .script-title {
+        margin-top: 15px;
+        .title {
+            font-size: 14px;
+            background: #d74b33;
+            padding: 5px 10px 0 10px;
+            color: white;
+            margin-bottom: 0px;
+            margin-right: 2px;
+            line-height: 1.42857143;
+            border-radius: 4px 4px 0 0;
+            width: 140px;
+            height: 40px;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    .script-content {
+        padding: 15px;
+        border: 1px solid #dddddd;
+        line-height: 30px;
+    }
+    .script {
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .photo {
+        text-align: center;
+    }
+}
