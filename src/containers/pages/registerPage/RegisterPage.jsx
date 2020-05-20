@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
-import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
-import { Partner } from '../../../components/product/partner/Partner'
-import { Link } from 'react-router-dom'
-import './RegisterPage.scss'
+import React, { Component } from "react";
+import MasterLayout from "../../../components/layout/masterLayout/MasterLayout";
+import SidebarAccount from "../../../components/layout/sidebarAccount/SidebarAccount";
+import { Partner } from "../../../components/product/partner/Partner";
+import { Link } from "react-router-dom";
+import "./RegisterPage.scss";
 import {
-    InformationUser,
-    InformationAccount,
-} from '../../../components/register/index'
+  InformationUser,
+  InformationAccount,
+} from "../../../components/register/index";
 
 export class RegisterPage extends Component {
   render() {
@@ -16,37 +16,39 @@ export class RegisterPage extends Component {
         <section className="register-page">
           <div className="container">
             <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-               < SidebarAccount/>
+              <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <SidebarAccount />
               </div>
-              <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+              <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
                 <div className="register-menu menu-title">
-                   <ul className="nav">
-                     <li className="nav-item">
-                       <Link className="nav-link" to="#">
-                         <span className="title">Trang chủ</span>
-                       </Link>
+                  <ul className="nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <span className="title">Trang chủ</span>
+                      </Link>
                     </li>
                     <li className="nav-item icon-link">
-                       <i className="fa fa-angle-double-right" aria-hidden="true"/>
+                      <i
+                        className="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      />
                     </li>
                     <li className="nav-item active">
                       <Link className="nav-link" to="#">
                         <strong>Đăng nhập</strong>
                       </Link>
                     </li>
-                   </ul>
+                  </ul>
                 </div>
-               < InformationAccount />
-               < InformationUser />
+                <InformationAccount />
+                <InformationUser />
               </div>
             </div>
             <Partner />
           </div>
         </section>
       </MasterLayout>
-    )
+    );
   }
 }
-
-export default RegisterPage
+export default RegisterPage;
