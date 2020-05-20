@@ -11,7 +11,11 @@ import {
   ShoppingCartPage,
   PayShoppingPage,
   FinishShoppingPage
+
 } from '../containers/pages'
+import LoginPage from '../containers/pages/loginPage/LoginPage'
+  
+
 
 const routes = [
   {
@@ -56,6 +60,7 @@ const routes = [
       <IntroduceDetailPage match={match} history={history} />
     ),
   },
+  
   {
     path: '/shopping-cart',
     exact: true,
@@ -70,7 +75,13 @@ const routes = [
     path: '/finish',
     exact: true,
     main: () => <FinishShoppingPage />,
+
   },
+  {
+    path: '/LoginPage',
+    exact: true,
+    main: () => < LoginPage / > ,
+},
 ]
 
 export default routes
