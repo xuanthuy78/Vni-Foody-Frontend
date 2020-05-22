@@ -10,12 +10,10 @@ import {
   IntroduceDetailPage,
   ShoppingCartPage,
   PayShoppingPage,
-  FinishShoppingPage
-
+  FinishShoppingPage,
+  ProductAdminPage,
 } from '../containers/pages'
 import LoginPage from '../containers/pages/loginPage/LoginPage'
-  
-
 
 const routes = [
   {
@@ -60,7 +58,6 @@ const routes = [
       <IntroduceDetailPage match={match} history={history} />
     ),
   },
-  
   {
     path: '/shopping-cart',
     exact: true,
@@ -75,13 +72,17 @@ const routes = [
     path: '/finish',
     exact: true,
     main: () => <FinishShoppingPage />,
-
   },
   {
     path: '/LoginPage',
     exact: true,
-    main: () => < LoginPage / > ,
-},
+    main: () => <LoginPage />,
+  },
+  {
+    path: '/admin/product',
+    exact: true,
+    main: () => <ProductAdminPage />,
+  },
 ]
 
 export default routes
