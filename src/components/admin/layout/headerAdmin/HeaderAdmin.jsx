@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../../../../logo.png'
+import LogoMobi from '../../../../logo-mobi.png'
 
 export class HeaderAdmin extends Component {
   handleShowSideBar = () => {
@@ -11,18 +13,10 @@ export class HeaderAdmin extends Component {
         <nav className="navbar navbar-expand navbar-light fixed-top">
           <div className="border-logo">
             <div className="screen-668">
-              <img
-                className="images-logo"
-                src={'assets/images/logo.png'}
-                alt="Logo"
-              />
+              <img src={Logo} alt="Logo" />
             </div>
             <div className="screen-mobi">
-              <img
-                className="images-logo"
-                src={'assets/images/logo-mobi.png'}
-                alt="Logo"
-              />
+              <img className="images-logo" src={LogoMobi} alt="Logo" />
             </div>
           </div>
           <div className="btn-toggler ml-5">

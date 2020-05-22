@@ -10,7 +10,7 @@ import ShoppingCartPage from './shoppingCartPage/ShoppingCartPage'
 import PayShoppingPage from './payShoppingPage/PayShoppingPage'
 import FinishShoppingPage from './finishShoppingPage/FinishShoppingPage'
 import HomeAdminPage from './admin/homeAdminPage/HomeAdminPage'
-
+import ProductAdminPage from './admin/productAdminPage/ProductAdminPage'
 export {
   HomePage,
   ProductPage,
@@ -23,5 +23,6 @@ export {
   ShoppingCartPage,
   PayShoppingPage,
   FinishShoppingPage,
-  HomeAdminPage
+  HomeAdminPage,
+  ProductAdminPage,
 }

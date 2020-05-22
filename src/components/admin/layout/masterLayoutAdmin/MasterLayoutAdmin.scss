@@ -150,15 +150,12 @@ $backgroud-sidebar: rgb(242, 223, 220);
     float: right;
     width: calc(100% - 185px);
     min-height: 100%;
-    padding: 20px 60px 0px 25px;
+    padding: 35px 20px 0px 20px;
     margin-top: 55px;
-    background: #f7f6f5;
   }
   .main-content {
     width: 100% !important;
-    padding: 20px 60px 0px 60px !important;
-    margin-top: 55px !important;
-    background: #f7f6f5 !important;
+    margin-top: 90px !important;
     min-height: 100% !important;
   }
 }
