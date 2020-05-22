@@ -1,45 +1,43 @@
 import React, { Component } from 'react'
 import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
 import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
-import './LoginPage.scss'
-import { Link } from 'react-router-dom'
 import { Partner } from '../../../components/product/partner/Partner'
+import { Link } from 'react-router-dom'
+import './RegisterPage.scss'
+import { InformationAccount } from '../../../components/register/index'
 
-import { InformationLogin } from '../../../components/login/index'
-export class LoginPage extends Component {
+export class RegisterPage extends Component {
   render() {
     return (
       <MasterLayout>
-        <section className="login-content">
+        <section className="register-page">
           <div className="container">
             <div className="row">
               <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
                 <SidebarAccount />
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                <div className="login-menu menu-title">
+                <div className="register-menu menu-title">
                   <ul className="nav">
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
-                        <span>Trang chủ</span>
+                        <span className="title">Trang chủ</span>
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <Link className="nav-link icon-link" to="#">
-                        <i
-                          className="fa fa-angle-double-right "
-                          aria-hidden="true"
-                        ></i>
-                      </Link>
+                    <li className="nav-item icon-link">
+                      <i
+                        className="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      />
                     </li>
                     <li className="nav-item active">
-                      <Link className="nav-link " to="#">
+                      <Link className="nav-link" to="#">
                         <strong>Đăng nhập</strong>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <InformationLogin />
+                <InformationAccount />
               </div>
             </div>
             <Partner />
@@ -50,4 +48,4 @@ export class LoginPage extends Component {
   }
 }
 
-export default LoginPage
+export default RegisterPage
