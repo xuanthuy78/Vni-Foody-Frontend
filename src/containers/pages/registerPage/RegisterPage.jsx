@@ -1,13 +1,10 @@
-import React, { Component } from "react";
-import MasterLayout from "../../../components/layout/masterLayout/MasterLayout";
-import SidebarAccount from "../../../components/layout/sidebarAccount/SidebarAccount";
-import { Partner } from "../../../components/product/partner/Partner";
-import { Link } from "react-router-dom";
-import "./RegisterPage.scss";
-import {
-  InformationUser,
-  InformationAccount,
-} from "../../../components/register/index";
+import React, { Component } from 'react'
+import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
+import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
+import { Partner } from '../../../components/product/partner/Partner'
+import { Link } from 'react-router-dom'
+import './RegisterPage.scss'
+import { InformationAccount } from '../../../components/register/index'
 
 export class RegisterPage extends Component {
   render() {
@@ -41,14 +38,13 @@ export class RegisterPage extends Component {
                   </ul>
                 </div>
                 <InformationAccount />
-                <InformationUser />
               </div>
             </div>
             <Partner />
           </div>
         </section>
       </MasterLayout>
-    );
+    )
   }
 }
-export default RegisterPage;
+export default RegisterPage

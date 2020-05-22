@@ -1,4 +1,3 @@
-import InformationAccount from "./informationAccount/InformationAccount";
-import InformationUser from "./informationUser/InformationUser";
+import InformationAccount from './informationAccount/InformationAccount'
 
-export { InformationUser, InformationAccount };
+export { InformationAccount }
