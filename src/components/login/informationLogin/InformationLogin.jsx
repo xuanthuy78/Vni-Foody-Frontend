@@ -55,5 +55,4 @@ export class InformationLogin extends Component {
     )
   }
 }
-
 export default InformationLogin
