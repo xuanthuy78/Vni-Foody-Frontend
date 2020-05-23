@@ -12,13 +12,20 @@
       margin: 0px !important;
     }
   }
+  .fade.in {
+    margin-top: 20px;
+    opacity: 1;
+  }
   .alert-info {
-    margin-top: 10px;
     color: #31708f;
     background-color: #d9edf7;
     border-color: #bce8f1;
   }
-
+  .alert {
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
   .form-horizontal {
     margin-top: 20px;
     .form-group {
@@ -36,8 +43,6 @@
         padding-left: 10px;
       }
     }
-  }
-  .button-login {
     .btn-primary {
       border-radius: 0;
       color: #ffffff;
@@ -52,11 +57,50 @@
         background-color: #333;
       }
     }
-    .registerPage {
-      font-size: 14px;
-      line-height: 1.42857143;
-      color: #d74b33;
-      margin-left: 10px;
+    .register {
+      padding-left: 5px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .forgetpassword-bottom {
+    .form-horizontal {
+      .form-group {
+        margin-left: -90px;
+      }
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .forgetpassword-bottom {
+    .form-horizontal {
+      .form-group {
+        margin-left: -90px;
+        display: block;
+        .control-label {
+          text-align: left;
+        }
+        .form-control {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  .forgetpassword-bottom {
+    .form-horizontal {
+      .form-group {
+        margin-left: -50px;
+        display: block;
+        .control-label {
+          text-align: left;
+        }
+        .register {
+          display: block;
+          margin-left: -5px;
+        }
+      }
     }
   }
 }

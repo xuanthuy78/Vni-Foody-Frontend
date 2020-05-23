@@ -1,14 +1,15 @@
 $edge-boder: rgb(221, 221, 221);
 $link-color: black;
 $menu-backgroud: rgb(215, 75, 51);
-.login-product {
+.sidebar-account {
   margin-top: 30px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  .login-title {
+  .sidebar-title {
     background: #403d3b;
     border: 1 px solid #403d3b;
+    border: 1px solid #dddddd;
     .title {
       background-color: #d74b33;
       color: #ffffff;
@@ -22,12 +23,12 @@ $menu-backgroud: rgb(215, 75, 51);
   }
   .menu-main {
     border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
     .nav-item {
       margin-left: 10px;
       .nav-link {
         color: #6a6a6a;
         font-weight: normal;
-
         display: block;
         position: relative;
         padding: 7px 15px;
@@ -37,6 +38,12 @@ $menu-backgroud: rgb(215, 75, 51);
       }
       .icon-border {
         border-bottom: 1px dotted #c3c3c3;
+      }
+      .silebar-border {
+        border-bottom: 1px dotted #c3c3c3;
+      }
+      .icon-text {
+        margin-left: 5px;
       }
     }
   }

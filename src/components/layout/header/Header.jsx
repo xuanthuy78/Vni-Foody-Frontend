@@ -33,13 +33,13 @@ export class Header extends Component {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/LoginPage">
                           <i className="fa fa-sign-in" />
                           Đăng nhập
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/RegisterPage">
                           <i className="fa fa-key" />
                           Đăng ký
                         </Link>

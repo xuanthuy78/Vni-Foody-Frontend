@@ -1,37 +1,52 @@
-import React, { Component } from 'react'
-import './InformationConfim.scss'
-import { Link } from 'react-router-dom'
-
+import React, { Component } from "react";
+import "./InformationConfim.scss";
+import { Link } from "react-router-dom";
 
 export class InformationConfim extends Component {
   render() {
     return (
-        <div className="forgetpassword-bottom">
-           <div className="forgetpassword-title">
-           <h3 className="title">Quên mật khẩu</h3>
-           </div>
-         <div className="alert alert-info">
-           <button  className="close" />
-           <i className="fa fa-check" aria-hidden="true"></i> 
-            Điền vào email của bạn để yêu cầu một mật khẩu mới. Một Email sẽ được gửi đến địa chỉ này để xác minh địa chỉ Email của bạn.
-         </div>
-         <form className="form-horizontal ">
-           <div className="form-group">
-            <label className="col-sm-4 control-label">Email</label>
-            <div className="col-sm-8">
-              <input type="email" className="form-control " />
+      <div className="forgetpassword-bottom">
+        <div className="forgetpassword-title">
+          <h3 className="title">Quên mật khẩu</h3>
+        </div>
+        <div className="alert alert-info fade in">
+          <button data-dismiss="alert" className="close" />
+          <i className="fa-fw fa fa-check" />
+          Điền vào email của bạn để yêu cầu một mật khẩu mới. Một Email sẽ được
+          gửi đến địa chỉ này để xác minh địa chỉ Email của bạn.
+        </div>
+        <div className="offset-2 col-md-9  col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
+          <form
+            className="form-horizontal ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+            ng-submit="forgetPassword()"
+          >
+            <div className="form-group">
+              <label className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 control-label">
+                Email
+              </label>
+              <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                <input
+                  type="email"
+                  className="form-control ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-touched"
+                  ng-model="Email"
+                />
+              </div>
             </div>
-           </div>
-           <div className="form-group">
-            <div className="offset-4 col-sm-8 button-login">
-              <button type="submit" className="btn btn-primary">Gửi mật khẩu</button>
-               <Link to="/RegisterPage" className="registerPage">Quay lại đăng nhập</Link>
+            <div className="form-group ">
+              <div className="offset-md-4 col-md-12 col-sm-12 col-12">
+                <button type="submit" className="btn btn-primary">
+                  Gửi mật khẩu
+                </button>
+                <Link to="/dang-nhap.html" className="register">
+                  Quay lại đăng nhập
+                </Link>
+              </div>
             </div>
-           </div>
           </form>
-       </div>
-    )
+        </div>
+      </div>
+    );
   }
 }
 
-export default InformationConfim
+export default InformationConfim;
