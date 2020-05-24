@@ -35,7 +35,7 @@ const columns = [
     title: 'Describe',
     dataIndex: 'describe',
     key: 'describe',
-    ellipsis: true,
+    render: (text) => <div className="describe">{text}</div>,
   },
   {
     title: 'Action',
@@ -57,7 +57,7 @@ const data = [
     type: 'Cơm',
     number: '10',
     describe:
-      'Description Description Description Description Description Description Description Description Description Description Description DescriptionDescription',
+      'Description Description Description DDescription Description DescriptDescription Description DescriptDescription Description DescriptDescription Description Descriptescription Description Description Description Description Description Description Description DescriptionDescription',
   },
 ]
 
