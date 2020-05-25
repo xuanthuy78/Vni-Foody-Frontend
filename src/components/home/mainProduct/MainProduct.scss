@@ -5,10 +5,12 @@ $menu-backgroud: rgb(215, 75, 51);
     border-bottom: 1px solid $menu-backgroud;
     .product-title {
       background: $menu-backgroud;
-      padding: 5px 10px 0 10px;
-      font-size: 24px;
       h3 {
         color: white;
+        margin: 0;
+        padding: 6px 5px;
+        font-size: 20px;
+        text-transform: uppercase;
       }
     }
   }
