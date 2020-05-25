@@ -4,7 +4,6 @@ import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAcc
 import './LoginPage.scss'
 import { Link } from 'react-router-dom'
 import { Partner } from '../../../components/product/partner/Partner'
-
 import { InformationLogin } from '../../../components/login/index'
 export class LoginPage extends Component {
   render() {

@@ -3,25 +3,25 @@ import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
 import SidebarAccount from '../../../components/layout/sidebarAccount/SidebarAccount'
 import { Partner } from '../../../components/product/partner/Partner'
 import { Link } from 'react-router-dom'
-import './RegisterPage.scss'
-import { InformationAccount } from '../../../components/register/index'
+import './ForgetPassWord.scss'
+import { InformationConfim } from '../../../components/forgetPassWord/index'
 
-export class RegisterPage extends Component {
+export class ForgetPassWord extends Component {
   render() {
     return (
       <MasterLayout>
-        <section className="register-page">
+        <section className="forgetpassword-content">
           <div className="container">
             <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+              <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                 <SidebarAccount />
               </div>
-              <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                <div className="register-menu menu-title">
+              <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                <div className="forgetpassword-menu menu-title">
                   <ul className="nav">
                     <li className="nav-item">
-                      <Link className="nav-link" to="#">
-                        <span className="title">Trang chủ</span>
+                      <Link className="nav-link" to="/">
+                        Trang chủ
                       </Link>
                     </li>
                     <li className="nav-item icon-link">
@@ -32,12 +32,12 @@ export class RegisterPage extends Component {
                     </li>
                     <li className="nav-item active">
                       <Link className="nav-link" to="#">
-                        <strong>Đăng ký tài khoản</strong>
+                        <span>Quên mật khẩu</span>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <InformationAccount />
+                <InformationConfim />
               </div>
             </div>
             <Partner />
@@ -48,4 +48,4 @@ export class RegisterPage extends Component {
   }
 }
 
-export default RegisterPage
+export default ForgetPassWord
