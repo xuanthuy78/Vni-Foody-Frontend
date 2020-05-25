@@ -63,6 +63,11 @@ $backgroud-sidebar: rgb(242, 223, 220);
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
           }
+          .icon-btn {
+            .btn {
+              padding: 0.1em 0.5em !important;
+            }
+          }
         }
       }
     }
