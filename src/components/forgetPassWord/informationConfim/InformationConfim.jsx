@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "./InformationConfim.scss";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import './InformationConfim.scss'
+import { Link } from 'react-router-dom'
 
 export class InformationConfim extends Component {
   render() {
@@ -45,8 +45,8 @@ export class InformationConfim extends Component {
           </form>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default InformationConfim;
+export default InformationConfim

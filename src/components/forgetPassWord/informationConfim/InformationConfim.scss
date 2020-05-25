@@ -1,9 +1,10 @@
 .forgetpassword-bottom {
+  overflow: hidden;
   .forgetpassword-title {
     margin-top: 10px;
     border-bottom: 1px solid #d74b33;
     .title {
-      background: #d74b33 none repeat scroll 0 0;
+      background: #d74b33;
       color: #fff;
       display: inline-block;
       font-size: 17px;
@@ -49,7 +50,6 @@
       border: none;
       padding: 9px 15px;
       margin-bottom: 0;
-      font-size: 12px;
       line-height: 1.42857143;
       background-color: #d74b33;
       color: #ffffff;
@@ -59,6 +59,7 @@
     }
     .register {
       padding-left: 5px;
+      color: #d74b33;
     }
   }
 }
@@ -87,6 +88,7 @@
     }
   }
 }
+
 @media (min-width: 0px) and (max-width: 479px) {
   .forgetpassword-bottom {
     .form-horizontal {
@@ -96,9 +98,9 @@
         .control-label {
           text-align: left;
         }
-        .register {
-          display: block;
-          margin-left: -5px;
+
+        .form-control {
+          width: 85%;
         }
       }
     }
