@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import './ProductAdminPage.scss'
+import CreateEditProduct from '../../../../components/admin/productAdmin/CreateEditProduct'
 import MasterLayoutAdmin from '../../../../components/admin/layout/masterLayoutAdmin/MasterLayoutAdmin'
 import { Table, Space, Modal } from 'antd'
 import { Link } from 'react-router-dom'
+import { ExclamationCircleOutlined } from '@ant-design/icons'
 
 const data = [
   {
@@ -17,6 +19,7 @@ const data = [
   },
 ]
 
+const { confirm } = Modal
 export class ProductAdminPage extends Component {
   constructor() {
     super()
@@ -24,6 +27,7 @@ export class ProductAdminPage extends Component {
       dataSource: null,
       columns: null,
       visible: false,
+      title: null,
     }
   }
   componentDidMount() {
@@ -31,15 +35,23 @@ export class ProductAdminPage extends Component {
       this.buildColumsFromDatasource(data)
     }, 1000)
   }
-
-  showModal = () => {
+  // modal
+  showModalCreate = () => {
     this.setState({
       visible: true,
+      title: 'Create Product',
+    })
+  }
+
+  showModalEdit = () => {
+    this.setState({
+      visible: true,
+      title: 'Edit Product',
     })
   }
 
   handleOk = (e) => {
-    console.log(e)
+    console.log(e.value)
     this.setState({
       visible: false,
     })
@@ -49,6 +61,22 @@ export class ProductAdminPage extends Component {
     console.log(e)
     this.setState({
       visible: false,
+    })
+  }
+  // end modal
+  // modal delete
+  showConfirm = () => {
+    confirm({
+      title: 'Do you want to delete these items?',
+      icon: <ExclamationCircleOutlined />,
+      content:
+        'When clicked the OK button, this dialog will be closed after 1 second',
+      onOk() {
+        return new Promise((resolve, reject) => {
+          setTimeout(Math.random() > 0.5 ? resolve : reject, 1000)
+        }).catch(() => console.log('Oops errors!'))
+      },
+      onCancel() {},
     })
   }
 
@@ -92,10 +120,18 @@ export class ProductAdminPage extends Component {
         key: 'action',
         render: (text, record) => (
           <Space size="middle" className="icon-btn">
-            <button type="button" className="btn btn-info">
+            <button
+              type="button"
+              className="btn btn-info"
+              onClick={this.showModalEdit}
+            >
               <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
             </button>
-            <button type="button" className="btn btn-danger">
+            <button
+              type="button"
+              className="btn btn-danger"
+              onClick={this.showConfirm}
+            >
               <i className="fa fa-trash-o" aria-hidden="true"></i>
             </button>
           </Space>
@@ -107,6 +143,7 @@ export class ProductAdminPage extends Component {
 
   render() {
     const { dataSource, columns } = this.state
+
     return (
       <MasterLayoutAdmin>
         <div className="main-detail">
@@ -147,7 +184,7 @@ export class ProductAdminPage extends Component {
                 <button
                   type="submit"
                   className="btn btn-warm"
-                  onClick={this.showModal}
+                  onClick={this.showModalCreate}
                 >
                   <i className="fa fa-plus mr-2" aria-hidden="true"></i>
                   <span className="title-add">Add</span>
@@ -158,16 +195,12 @@ export class ProductAdminPage extends Component {
           <div className="table">
             <Table columns={columns} dataSource={dataSource} />
           </div>
-          <Modal
-            title="Add product"
+          <CreateEditProduct
             visible={this.state.visible}
-            onOk={this.handleOk}
-            onCancel={this.handleCancel}
-          >
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </Modal>
+            handleOk={this.handleOk}
+            handleCancel={this.handleCancel}
+            title={this.state.title}
+          />
         </div>
       </MasterLayoutAdmin>
     )

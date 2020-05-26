@@ -12,6 +12,7 @@ import {
   PayShoppingPage,
   FinishShoppingPage,
   ProductAdminPage,
+  HomeAdminPage,
 } from '../containers/pages'
 import LoginPage from '../containers/pages/loginPage/LoginPage'
 
@@ -82,6 +83,11 @@ const routes = [
     path: '/admin/product',
     exact: true,
     main: () => <ProductAdminPage />,
+  },
+  {
+    path: '/admin/home',
+    exact: true,
+    main: () => <HomeAdminPage />,
   },
 ]
 
