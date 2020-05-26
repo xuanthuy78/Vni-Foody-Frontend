@@ -1,8 +1,31 @@
 import React, { Component } from 'react'
 import './AboutInformationProduct.scss'
 import { Link } from 'react-router-dom'
+import { Modal } from 'antd'
 
 export class AboutInformationProduct extends Component {
+  state = { visible: false }
+
+  showModal = () => {
+    this.setState({
+      visible: true,
+    })
+  }
+
+  handleOk = (e) => {
+    console.log(e)
+    this.setState({
+      visible: false,
+    })
+  }
+
+  handleCancel = (e) => {
+    console.log(e)
+    this.setState({
+      visible: false,
+    })
+  }
+
   render() {
     return (
       <div className="information-product">
@@ -64,10 +87,17 @@ export class AboutInformationProduct extends Component {
               </div>
             </div>
             <div className="button-card">
-              <Link to="#" className="btn btn-dark">
+              <Link to="#" className="btn btn-dark" onClick={this.showModal}>
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i> Thêm
                 giỏ hàng
               </Link>
+              <Modal visible={this.state.visible} onOk={this.handleOk}>
+                <div className="modal-header">
+                  <h4 className="modal-title ng-binding">
+                    Bạn có 2 sản phẩm trong giỏ hàng.
+                  </h4>
+                </div>
+              </Modal>
               <Link to="#" className="btn btn-danger">
                 <i className="fa fa-check" aria-hidden="true"></i> Mua ngay
               </Link>

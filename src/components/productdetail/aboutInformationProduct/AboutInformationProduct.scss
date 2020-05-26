@@ -194,4 +194,16 @@ $backgroud: gray;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+  .modal-body {
+    .table {
+      width: 50%;
+      height: 50%;
+    }
+    .item-image {
+      .img-top {
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
 }
