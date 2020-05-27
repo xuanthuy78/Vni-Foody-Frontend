@@ -27,6 +27,8 @@ export class CreateEditProduct extends Component {
         visible={this.props.visible}
         onOk={this.props.handleOk}
         onCancel={this.props.handleCancel}
+        footer={null}
+        width="80%"
       >
         <Form
           layout="vertical"
@@ -84,7 +86,7 @@ export class CreateEditProduct extends Component {
               },
             ]}
           >
-            <Input />
+            <Input.TextArea />
           </Form.Item>
           <Form.Item
             label="Upload"
@@ -105,7 +107,8 @@ export class CreateEditProduct extends Component {
             </Upload>
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit">
+            <Button onClick={this.props.handleCancel}>Cancel</Button>
+            <Button type="primary" htmlType="submit" className="ml-3">
               Submit
             </Button>
           </Form.Item>

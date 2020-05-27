@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './ProductAdminPage.scss'
 import CreateEditProduct from '../../../../components/admin/productAdmin/CreateEditProduct'
+import ViewProduct from '../../../../components/admin/productAdmin/ViewProduct'
 import MasterLayoutAdmin from '../../../../components/admin/layout/masterLayoutAdmin/MasterLayoutAdmin'
 import { Table, Space, Modal } from 'antd'
 import { Link } from 'react-router-dom'
@@ -27,6 +28,7 @@ export class ProductAdminPage extends Component {
       dataSource: null,
       columns: null,
       visible: false,
+      viewVisible: false,
       title: null,
     }
   }
@@ -35,7 +37,7 @@ export class ProductAdminPage extends Component {
       this.buildColumsFromDatasource(data)
     }, 1000)
   }
-  // modal
+  // modal create, edit
   showModalCreate = () => {
     this.setState({
       visible: true,
@@ -51,19 +53,36 @@ export class ProductAdminPage extends Component {
   }
 
   handleOk = (e) => {
-    console.log(e.value)
     this.setState({
       visible: false,
     })
   }
 
   handleCancel = (e) => {
-    console.log(e)
     this.setState({
       visible: false,
     })
   }
   // end modal
+  // view
+  showModalView = () => {
+    this.setState({
+      viewVisible: true,
+      title: 'View Product',
+    })
+  }
+
+  handleOkView = (e) => {
+    this.setState({
+      viewVisible: false,
+    })
+  }
+
+  handleCancelView = (e) => {
+    this.setState({
+      viewVisible: false,
+    })
+  }
   // modal delete
   showConfirm = () => {
     confirm({
@@ -91,13 +110,26 @@ export class ProductAdminPage extends Component {
         title: 'Image',
         dataIndex: 'image',
         key: 'image',
+        render: (text) => (
+          <div className="item">
+            <img
+              className=""
+              src={'http://localhost:3000/assets/images/left_1.png'}
+              alt=""
+            />
+          </div>
+        ),
       },
       {
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
         width: 150,
-        render: (text) => <Link to="#">{text}</Link>,
+        render: (text) => (
+          <Link to="#" onClick={this.showModalView}>
+            {text}
+          </Link>
+        ),
       },
       {
         title: 'Type',
@@ -199,6 +231,12 @@ export class ProductAdminPage extends Component {
             visible={this.state.visible}
             handleOk={this.handleOk}
             handleCancel={this.handleCancel}
+            title={this.state.title}
+          />
+          <ViewProduct
+            visible={this.state.viewVisible}
+            handleOk={this.handleOkView}
+            handleCancel={this.handleCancelView}
             title={this.state.title}
           />
         </div>

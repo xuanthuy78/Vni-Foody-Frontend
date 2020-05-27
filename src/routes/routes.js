@@ -80,14 +80,14 @@ const routes = [
     main: () => <LoginPage />,
   },
   {
+    path: '/admin',
+    exact: true,
+    main: () => <HomeAdminPage />,
+  },
+  {
     path: '/admin/product',
     exact: true,
     main: () => <ProductAdminPage />,
-  },
-  {
-    path: '/admin/home',
-    exact: true,
-    main: () => <HomeAdminPage />,
   },
 ]
 

@@ -24,7 +24,7 @@ export class SidebarAdmin extends Component {
               to={{ pathname: '#product' }}
             >
               <span className="icon">
-                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <i className="fa fa-newspaper-o" aria-hidden="true"></i>
               </span>
               <span className="title">New</span>
               <span className="arrive">
