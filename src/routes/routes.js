@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   HomePage,
   ProductPage,
@@ -11,11 +11,13 @@ import {
   ShoppingCartPage,
   PayShoppingPage,
   FinishShoppingPage,
-} from '../containers/pages'
-import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord'
-import RegisterPage from '../containers/pages/registerPage/RegisterPage'
-import LoginPage from '../containers/pages/loginPage/LoginPage'
-import ContactPage from '../containers/pages/contactpage/ContactPage'
+  ProductAdminPage,
+  HomeAdminPage,
+} from '../containers/pages';
+import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord';
+import RegisterPage from '../containers/pages/registerPage/RegisterPage';
+import LoginPage from '../containers/pages/loginPage/LoginPage';
+import ContactPage from '../containers/pages/contactpage/ContactPage';
 
 const routes = [
   {
@@ -91,10 +93,20 @@ const routes = [
     main: () => <LoginPage />,
   },
   {
+    path: '/admin',
+    exact: true,
+    main: () => <HomeAdminPage />,
+  },
+  {
+    path: '/admin/product',
+    exact: true,
+    main: () => <ProductAdminPage />,
+  },
+  {
     path: '/ContactPage',
     exact: true,
     main: () => <ContactPage />,
   },
-]
+];
 
-export default routes
+export default routes;
