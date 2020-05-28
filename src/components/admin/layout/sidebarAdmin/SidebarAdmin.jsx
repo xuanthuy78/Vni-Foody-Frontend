@@ -7,7 +7,7 @@ export class SidebarAdmin extends Component {
       <section className="sidebar-menu">
         <ul className="navbar-nav" id="accordion">
           <li className="nav-item">
-            <Link className="nav-link parent" to="product">
+            <Link className="nav-link parent" to="/admin/product">
               <span className="icon">
                 <i className="fa fa-product-hunt fa-lg" aria-hidden="true"></i>
               </span>

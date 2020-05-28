@@ -13,12 +13,12 @@ export class HeaderAdmin extends Component {
         <nav className="navbar navbar-expand navbar-light fixed-top">
           <div className="border-logo">
             <div className="screen-668">
-              <Link to="home">
+              <Link to="/admin">
                 <img src={Logo} alt="Logo" />
               </Link>
             </div>
             <div className="screen-mobi">
-              <Link to="home">
+              <Link to="/admin">
                 <img className="images-logo" src={LogoMobi} alt="Logo" />
               </Link>
             </div>
