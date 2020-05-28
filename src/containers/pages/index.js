@@ -9,7 +9,8 @@ import ProductCategoryPage from './productCategoryPage/ProductCategoryPage'
 import ShoppingCartPage from './shoppingCartPage/ShoppingCartPage'
 import PayShoppingPage from './payShoppingPage/PayShoppingPage'
 import FinishShoppingPage from './finishShoppingPage/FinishShoppingPage'
-
+import HomeAdminPage from './admin/homeAdminPage/HomeAdminPage'
+import ProductAdminPage from './admin/productAdminPage/ProductAdminPage'
 export {
   HomePage,
   ProductPage,
@@ -21,5 +22,7 @@ export {
   ProductCategoryPage,
   ShoppingCartPage,
   PayShoppingPage,
-  FinishShoppingPage
+  FinishShoppingPage,
+  HomeAdminPage,
+  ProductAdminPage,
 }

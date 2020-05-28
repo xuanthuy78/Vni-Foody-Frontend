@@ -11,10 +11,13 @@ import {
   ShoppingCartPage,
   PayShoppingPage,
   FinishShoppingPage,
+  ProductAdminPage,
+  HomeAdminPage,
 } from '../containers/pages'
 import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord'
 import RegisterPage from '../containers/pages/registerPage/RegisterPage'
 import LoginPage from '../containers/pages/loginPage/LoginPage'
+
 const routes = [
   {
     path: '/',
@@ -87,6 +90,16 @@ const routes = [
     path: '/LoginPage',
     exact: true,
     main: () => <LoginPage />,
+  },
+  {
+    path: '/admin',
+    exact: true,
+    main: () => <HomeAdminPage />,
+  },
+  {
+    path: '/admin/product',
+    exact: true,
+    main: () => <ProductAdminPage />,
   },
 ]
 
