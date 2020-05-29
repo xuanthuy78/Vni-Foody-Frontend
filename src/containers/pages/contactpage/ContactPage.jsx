@@ -29,7 +29,7 @@ export class ContactPage extends Component {
                   ></i>
                 </li>
                 <li className="nav-item active">
-                  <Link className="nav-link" to="#">
+                  <Link className="nav-link" to="/ContactPage">
                     <span>Liên hệ</span>
                   </Link>
                 </li>
@@ -44,8 +44,7 @@ export class ContactPage extends Component {
                 <div className="about-support">
                   <div className="support-title">
                     <h3 className="title">
-                      {' '}
-                      SẢN PHẨM HOT{' '}
+                      SẢN PHẨM HOT
                       <i
                         className="fa fa-bars float-right"
                         aria-hidden="true"
