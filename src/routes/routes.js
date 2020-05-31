@@ -17,6 +17,7 @@ import {
 import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord'
 import RegisterPage from '../containers/pages/registerPage/RegisterPage'
 import LoginPage from '../containers/pages/loginPage/LoginPage'
+import ContactPage from '../containers/pages/contactpage/ContactPage'
 
 const routes = [
   {
@@ -101,6 +102,12 @@ const routes = [
     exact: true,
     main: () => <ProductAdminPage />,
   },
-]
+  {
+    path: '/ContactPage',
+    exact: true,
+    main: () => <ContactPage />,
+  },
+];
 
 export default routes
+
