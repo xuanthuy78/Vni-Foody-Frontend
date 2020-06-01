@@ -96,6 +96,7 @@ export class AboutInformationProduct extends Component {
                 visible={this.state.visible}
                 onOk={this.handleOk}
                 onCancel={this.handleCancel}
+                width="60%"
               >
                 <div className="modal-body">
                   <table className="table">
