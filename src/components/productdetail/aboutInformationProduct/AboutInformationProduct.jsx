@@ -96,60 +96,84 @@ export class AboutInformationProduct extends Component {
                 visible={this.state.visible}
                 onOk={this.handleOk}
                 onCancel={this.handleCancel}
-                width="60%"
+                width="65%"
               >
-                <div className="modal-body">
-                  <table className="table">
-                    <thead>
-                      <tr>
-                        <th />
-                        <th>Tên sản phẩm</th>
-                        <th>Số lượng</th>
-                        <th>Giá tiền</th>
-                        <th />
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr
-                        className="line-item ng-scope"
-                        ng-repeat="item in OrderDetails"
-                      >
-                        <td className="item-image">
-                          <img
-                            className="img-top"
-                            src={'assets/images/sup_cua_large.jpg'}
-                            alt=""
-                            width="100px"
-                            height="50px"
-                          />
-                        </td>
-                        <td className="item-title">
-                          <Link
-                            to="/san-pham/sup-ga-kem-sua.html"
-                            className="ng-binding"
-                          >
-                            Súp gà kem sữa
-                            <br />
-                          </Link>
-                        </td>
-                        <td className="item-quantity">
-                          <input
-                            type="number"
-                            className="text ng-pristine ng-untouched ng-valid"
-                            ng-model="item.Quantity"
-                            ng-change="updateItemCart(item)"
-                          />
-                        </td>
-                        <td className="item-price ng-binding">312,000₫</td>
-                        <td className="item-delete">
-                          <Link to="/#">Xóa</Link>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                {' '}
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th />
+                      <th>Tên sản phẩm</th>
+                      <th>Số lượng</th>
+                      <th>Giá tiền</th>
+                      <th />
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      className="line-item ng-scope"
+                      ng-repeat="item in OrderDetails"
+                    >
+                      <td className="item-image">
+                        <img
+                          className="img-top"
+                          src={'assets/images/sup_cua_large.jpg'}
+                          alt=""
+                          width="100px"
+                          height="50px"
+                        />
+                      </td>
+                      <td className="item-title">
+                        <Link
+                          to="/san-pham/sup-ga-kem-sua.html"
+                          className="ng-binding"
+                        >
+                          Súp gà kem sữa
+                          <br />
+                        </Link>
+                      </td>
+                      <td className="item-quantity">
+                        <input
+                          type="number"
+                          className="text ng-pristine ng-untouched ng-valid"
+                          ng-model="item.Quantity"
+                          ng-change="updateItemCart(item)"
+                        />
+                      </td>
+                      <td className="item-price ng-binding">312,000₫</td>
+                      <td className="item-delete">
+                        <Link to="/#">Xóa</Link>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div className="row">
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div className="total-price-modal">
+                      Tổng cộng :{' '}
+                      <span className="item-total ng-binding">157,000₫</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="row margin-top-10">
+                  <div className="col-lg-6">
+                    <div className="comeback text-left">
+                      <Link to="/">
+                        <i className="fa fa-chevron-circle-left " /> Tiếp tục
+                        mua hàng
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <div className="buttons btn-modal-cart">
+                      <Link className="btn btn-default" to="/pay-shopping">
+                        Đặt hàng
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </Modal>
-              <Link to="#" className="btn btn-danger">
+              <Link to="/shopping-cart" className="btn btn-danger">
                 <i className="fa fa-check" aria-hidden="true"></i> Mua ngay
               </Link>
             </div>

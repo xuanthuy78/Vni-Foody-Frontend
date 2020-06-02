@@ -11,12 +11,15 @@ import {
   ShoppingCartPage,
   PayShoppingPage,
   FinishShoppingPage,
- 
+  ProductAdminPage,
+  HomeAdminPage,
 } from '../containers/pages'
+import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord'
+import RegisterPage from '../containers/pages/registerPage/RegisterPage'
+import LoginPage from '../containers/pages/loginPage/LoginPage'
+import ContactPage from '../containers/pages/contactpage/ContactPage'
 import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetailPage'
 import CartPage from '../containers/pages/cartPage/CartPage'
-
-
 
 const routes = [
   {
@@ -77,15 +80,45 @@ const routes = [
     main: () => <FinishShoppingPage />,
   },
   {
-    path: '/productdetail',
-    exact: true,
-    main: () => <ProducDetailPage/>,
-  },
-  {
     path: '/cart',
     exact: true,
-    main: () => <CartPage/>,
-  }
+    main: () => <CartPage />,
+  },
+  {
+    path: '/forgetPassWord',
+    exact: true,
+    main: () => <ForgetPassWord />,
+  },
+  {
+    path: '/RegisterPage',
+    exact: true,
+    main: () => <RegisterPage />,
+  },
+  {
+    path: '/LoginPage',
+    exact: true,
+    main: () => <LoginPage />,
+  },
+  {
+    path: '/admin',
+    exact: true,
+    main: () => <HomeAdminPage />,
+  },
+  {
+    path: '/admin/product',
+    exact: true,
+    main: () => <ProductAdminPage />,
+  },
+  {
+    path: '/ContactPage',
+    exact: true,
+    main: () => <ContactPage />,
+  },
+  {
+    path: '/productdetail',
+    exact: true,
+    main: () => <ProducDetailPage />,
+  },
 ]
 
 export default routes
