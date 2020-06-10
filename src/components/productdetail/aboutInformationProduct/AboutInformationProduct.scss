@@ -196,10 +196,12 @@ $backgroud: gray;
     border-radius: 4px;
   }
 }
-
-.modal-content {
-  border: 1px solid #999;
-  border-radius: 6px;
+.ant-modal-root {
+  .content-modal {
+    margin-top: -65px !important;
+  }
+}
+.content-modal {
   .table {
     .item-title {
       .ng-binding {
@@ -260,44 +262,30 @@ $backgroud: gray;
     }
   }
 }
-@media (min-width: 992px) and (max-width: 1016px) {
-  .modal-content {
-    width: 65%;
-    height: 30%;
-    .item-title {
-      .ng-binding {
-        white-space: nowrap;
-      }
-    }
-  }
-}
-@media (min-width: 938px) and (max-width: 991px) {
-  .modal-content {
-    .modal-body {
-      width: 100%;
-    }
 
-    .table {
-      .item-title {
-        .ng-binding {
-          white-space: nowrap;
+@media (min-width: 992px) and (max-width: 1236px) {
+  .content-modal {
+    .body-modal {
+      .table {
+        .item-title {
+          .ng-binding {
+            white-space: nowrap;
+          }
         }
       }
     }
   }
 }
-@media (min-width: 840px) and (max-width: 937px) {
-  .modal-content {
-    width: 130%;
-
-    .modal-body {
-      width: 100%;
-      background-color: skyblue;
-    }
-    .table {
-      .item-title {
-        .ng-binding {
-          white-space: nowrap;
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-modal {
+    max-width: 100%;
+    .body-modal {
+      max-width: 50%;
+      .table {
+        .item-title {
+          .ng-binding {
+            white-space: nowrap;
+          }
         }
       }
     }

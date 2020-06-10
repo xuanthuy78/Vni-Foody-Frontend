@@ -119,11 +119,11 @@ export class AboutInformationProduct extends Component {
           onOk={this.handleOk}
           onCancel={this.handleCancel}
           footer={null}
-          className="modal-content"
+          className="content-modal"
           width="70%"
         >
-          <div className="modal-body">
-            <table className="table">
+          <div className="body-modal table-responsive">
+            <table className="table " width="100%">
               <thead>
                 <tr>
                   <th />
@@ -148,7 +148,7 @@ export class AboutInformationProduct extends Component {
                     />
                   </td>
                   <td className="item-title">
-                    <Link to="/product" className="ng-binding">
+                    <Link to="/productdetail" className="ng-binding">
                       Súp gà kem sữa
                       <br />
                     </Link>
