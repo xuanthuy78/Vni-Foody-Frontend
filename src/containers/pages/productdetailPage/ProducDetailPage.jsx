@@ -8,9 +8,34 @@ import {
   ScriptAboutProduct,
   MenuProductDetail,
 } from '../../../components/productdetail/index'
+import ModalView from '../../../components/productdetail/modalView/ModalView'
 
 export class ProducDetailPage extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showModalView: false,
+    }
+  }
+  handleShowModalView = () => {
+    this.setState({
+      showModalView: !this.state.showModalView,
+    })
+  }
+  handleOk = (e) => {
+    console.log(e)
+    this.setState({
+      showModalView: false,
+    })
+  }
+  handleCancel = (e) => {
+    console.log(e)
+    this.setState({
+      showModalView: false,
+    })
+  }
   render() {
+    console.log(this.state.showModalView)
     return (
       <MasterLayout>
         <section className="main-content">
@@ -26,7 +51,14 @@ export class ProducDetailPage extends Component {
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 order-01">
                 <MenuProductDetail></MenuProductDetail>
-                <AboutInformationProduct></AboutInformationProduct>
+                <AboutInformationProduct
+                  handleShowModalView={this.handleShowModalView}
+                />
+                <ModalView
+                  displayModalView={this.state.showModalView}
+                  funtionCantion={this.handleCancel}
+                />
+
                 <ScriptAboutProduct></ScriptAboutProduct>
               </div>
             </div>

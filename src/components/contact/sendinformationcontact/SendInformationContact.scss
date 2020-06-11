@@ -61,8 +61,8 @@ $background: white;
 @media (min-width: 992px) and (max-width: 1236px) {
   .about-informationsend-contact {
     .google-map {
-      width: 340px !important;
-      height: 359px !important;
+      width: 340px;
+      height: 359px;
     }
   }
 }
@@ -70,8 +70,8 @@ $background: white;
   .about-informationsend-contact {
     margin-right: -5px;
     .google-map {
-      width: 695px !important;
-      height: 290px !important;
+      width: 695px;
+      height: 290px;
 
       margin-bottom: 60px;
     }
