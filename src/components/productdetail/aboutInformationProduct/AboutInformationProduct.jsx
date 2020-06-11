@@ -1,30 +1,9 @@
 import React, { Component } from "react";
 import "./AboutInformationProduct.scss";
 import { Link } from "react-router-dom";
-import { Modal, Button } from "antd";
 
 export class AboutInformationProduct extends Component {
-  state = { visible: false };
 
-  showModal = () => {
-    this.setState({
-      visible: true,
-    });
-  };
-
-  handleordercart = (e) => {
-    console.log(e);
-    this.setState({
-      visible: false,
-    });
-  };
-
-  handleCancel = (e) => {
-    console.log(e);
-    this.setState({
-      visible: false,
-    });
-  };
   render() {
     return (
       <div className="information-product">
@@ -93,20 +72,6 @@ export class AboutInformationProduct extends Component {
               <Link to="#" className="btn btn-danger">
                 <i className="fa fa-check" aria-hidden="true"></i> Mua ngay
               </Link>
-              <Modal
-                title="Bạn có 1 sản phẩm trong giỏ hàng.
-                "
-                visible={this.state.visible}
-                onmua={this.ordercart}
-                onCancel={this.handleCancel}
-              >
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <Button variant="primary" onClick={handleClose}>
-                  Đăt hàng
-                </Button>
-              </Modal>
             </div>
             <div className="call">
               <p className="title">
