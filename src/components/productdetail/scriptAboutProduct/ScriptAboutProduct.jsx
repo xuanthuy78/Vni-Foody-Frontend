@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./ScriptAboutProduct.scss";
+import React, { Component } from 'react';
+import './ScriptAboutProduct.scss';
 
 export class ScriptAboutProduct extends Component {
   render() {
@@ -35,7 +35,7 @@ export class ScriptAboutProduct extends Component {
           <div className="photo">
             <img
               className="card-img-top"
-              src={"assets/images/sup_cua_large.jpg"}
+              src={'assets/images/sup_cua_large.jpg'}
               alt=""
             />
           </div>

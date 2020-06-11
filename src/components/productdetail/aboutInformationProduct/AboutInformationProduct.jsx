@@ -1,9 +1,11 @@
-import React, { Component } from "react";
-import "./AboutInformationProduct.scss";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import './AboutInformationProduct.scss';
+import { Link } from 'react-router-dom';
 
 export class AboutInformationProduct extends Component {
-
+  handleShowModalView = () => {
+    this.props.handleShowModalView();
+  };
   render() {
     return (
       <div className="information-product">
@@ -12,7 +14,7 @@ export class AboutInformationProduct extends Component {
             <div className="product-image">
               <img
                 className="img-top"
-                src={"assets/images/sup_cua_large.jpg"}
+                src={'assets/images/sup_cua_large.jpg'}
                 alt=""
               />
             </div>
@@ -36,7 +38,7 @@ export class AboutInformationProduct extends Component {
               <div className="like">
                 <div className="like-button">
                   <button>
-                    <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>{" "}
+                    <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>{' '}
                     Like 4
                   </button>
                 </div>
@@ -49,7 +51,7 @@ export class AboutInformationProduct extends Component {
               <div className="right-button">
                 <div className="plus">
                   <button>
-                    <i className="fa fa-plus-square" aria-hidden="true"></i>{" "}
+                    <i className="fa fa-plus-square" aria-hidden="true"></i>{' '}
                     chia sẻ
                   </button>
                 </div>
@@ -65,11 +67,15 @@ export class AboutInformationProduct extends Component {
               </div>
             </div>
             <div className="button-card">
-              <Link to="#" className="btn btn-dark" onClick={this.showModal}>
+              <Link
+                to="#"
+                className="btn btn-dark"
+                onClick={this.handleShowModalView}
+              >
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i> Thêm
-                giỏ hàng
+                giỏ hàng ffsadf
               </Link>
-              <Link to="#" className="btn btn-danger">
+              <Link to="/shopping-cart" className="btn btn-danger">
                 <i className="fa fa-check" aria-hidden="true"></i> Mua ngay
               </Link>
             </div>
