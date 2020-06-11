@@ -10,7 +10,7 @@ export class AboutInformationProduct extends Component {
     return (
       <div className="information-product">
         <div className="row">
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div className="product-image">
               <img
                 className="img-top"
@@ -19,7 +19,7 @@ export class AboutInformationProduct extends Component {
               />
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div className="information-title">
               <h2 className="title">Xà lách trộn kiểu Nga</h2>
             </div>
@@ -38,7 +38,7 @@ export class AboutInformationProduct extends Component {
               <div className="like">
                 <div className="like-button">
                   <button>
-                    <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>{' '}
+                    <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
                     Like 4
                   </button>
                 </div>
@@ -51,7 +51,7 @@ export class AboutInformationProduct extends Component {
               <div className="right-button">
                 <div className="plus">
                   <button>
-                    <i className="fa fa-plus-square" aria-hidden="true"></i>{' '}
+                    <i className="fa fa-plus-square" aria-hidden="true"></i>
                     chia sẻ
                   </button>
                 </div>
@@ -73,7 +73,7 @@ export class AboutInformationProduct extends Component {
                 onClick={this.handleShowModalView}
               >
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i> Thêm
-                giỏ hàng ffsadf
+                giỏ hàng
               </Link>
               <Link to="/shopping-cart" className="btn btn-danger">
                 <i className="fa fa-check" aria-hidden="true"></i> Mua ngay
