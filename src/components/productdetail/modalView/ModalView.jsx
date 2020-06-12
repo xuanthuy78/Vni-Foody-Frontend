@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Modal } from 'antd'
-import './ModalView.scss';
+import './ModalView.scss'
 
 export class ModalView extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className="modal-dialog  modal-lg">
         <Modal

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import './AboutInformationProduct.scss';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import './AboutInformationProduct.scss'
+import { Link } from 'react-router-dom'
 
 export class AboutInformationProduct extends Component {
   handleShowModalView = () => {
-    this.props.handleShowModalView();
-  };
+    this.props.handleShowModalView()
+  }
   render() {
     return (
       <div className="information-product">
@@ -27,7 +27,7 @@ export class AboutInformationProduct extends Component {
               <span className="price-new">59,000đ</span>
             </div>
             <div className="code-product">
-              <span>Mã SP: </span>
+              <span className="text-social">Mã SP: </span>
             </div>
             <div className="description">
               <p>
@@ -50,10 +50,51 @@ export class AboutInformationProduct extends Component {
               </div>
               <div className="right-button">
                 <div className="plus">
-                  <button>
-                    <i className="fa fa-plus-square" aria-hidden="true"></i>
-                    chia sẻ
-                  </button>
+                  <ul className="navbar-nav">
+                    <li className="nav-item text-share text-share">
+                      <i className="fa fa-plus-square" aria-hidden="true" />
+                      chia sẻ
+                      <ul className="navbar-nav button-social">
+                        <li className="nav-item">
+                          <i
+                            className="fa fa-facebook-square"
+                            aria-hidden="true"
+                          />
+                          <span className="text-social"> FaceBook</span>
+                        </li>
+                        <li className="nav-item">
+                          <i className="fa fa-twitter" aria-hidden="true" />
+                          <span className="text-social"> Twitter</span>
+                        </li>
+                        <li className="nav-item">
+                          <i className="fa fa-envelope" aria-hidden="true" />
+                          <span className="text-social"> Email</span>
+                        </li>
+                        <li className="nav-item">
+                          <i className="fa fa-pinterest" aria-hidden="true" />
+                          <span className="text-social"> Pinterset</span>
+                        </li>
+                        <li className="nav-item">
+                          <i
+                            className="fa fa-google-plus-square"
+                            aria-hidden="true"
+                          />
+                          <span className="text-social"> Google+</span>
+                        </li>
+                        <li className="nav-item">
+                          <i class="fa fa-print" aria-hidden="true" />
+                          <span className="text-social">Print</span>
+                        </li>
+                        <li className="nav-item">
+                          <i
+                            className="fa fa-plus-square add"
+                            aria-hidden="true"
+                          />
+                          <span className="text-social">Add</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
                 <div className="number">
                   <button>2</button>
@@ -98,8 +139,8 @@ export class AboutInformationProduct extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default AboutInformationProduct;
+export default AboutInformationProduct

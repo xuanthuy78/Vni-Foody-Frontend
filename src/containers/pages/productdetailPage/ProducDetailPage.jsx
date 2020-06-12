@@ -1,41 +1,40 @@
-import React, { Component } from 'react';
-import MasterLayout from '../../../components/layout/masterLayout/MasterLayout';
-import './ProducDetailPage.scss';
+import React, { Component } from 'react'
+import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
+import './ProducDetailPage.scss'
 import {
   HotProduct,
   ProductDetailSidebar,
   AboutInformationProduct,
   ScriptAboutProduct,
-} from '../../../components/productdetail/index';
-import ModalView from '../../../components/productdetail/modalView/ModalView';
-import { Link } from 'react-router-dom';
+} from '../../../components/productdetail/index'
+import ModalView from '../../../components/productdetail/modalView/ModalView'
+import { Link } from 'react-router-dom'
 
 export class ProducDetailPage extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       showModalView: false,
-    };
+    }
   }
   handleShowModalView = () => {
     this.setState({
       showModalView: !this.state.showModalView,
-    });
-  };
+    })
+  }
   handleOk = (e) => {
-    console.log(e);
+    console.log(e)
     this.setState({
       showModalView: false,
-    });
-  };
+    })
+  }
   handleCancel = (e) => {
-    console.log(e);
+    console.log(e)
     this.setState({
       showModalView: false,
-    });
-  };
+    })
+  }
   render() {
-    console.log(this.state.showModalView);
     return (
       <MasterLayout>
         <section className="main-content">
@@ -99,8 +98,8 @@ export class ProducDetailPage extends Component {
           </div>
         </section>
       </MasterLayout>
-    );
+    )
   }
 }
 
-export default ProducDetailPage;
+export default ProducDetailPage
