@@ -10,7 +10,6 @@ export class SendInformationContact extends Component {
           <h3 className="title">GỬI THÔNG TIN LIÊN HỆ</h3>
         </div>
         <div className="description">
-          {' '}
           Xin vui lòng điền các yêu cầu vào mẫu dưới đây và gửi cho chúng tôi.
           Chúng tôi sẽ trả lời bạn ngay sau khi nhận được. Xin chân thành cảm
           ơn!
@@ -43,7 +42,7 @@ export class SendInformationContact extends Component {
                     type="text"
                     className="form-control"
                     placeholder="Địa chỉ"
-                    aria-label="Username"
+                    aria-label=""
                     aria-describedby="basic-addon1"
                   />
                 </div>
@@ -57,7 +56,7 @@ export class SendInformationContact extends Component {
                     type="text"
                     className="form-control"
                     placeholder="Email"
-                    aria-label="Username"
+                    aria-label=""
                     aria-describedby="basic-addon1"
                   />
                 </div>

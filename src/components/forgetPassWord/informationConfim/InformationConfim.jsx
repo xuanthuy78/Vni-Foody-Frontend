@@ -37,7 +37,7 @@ export class InformationConfim extends Component {
                 <button type="submit" className="btn btn-primary">
                   Gửi mật khẩu
                 </button>
-                <Link to="/dang-nhap.html" className="register">
+                <Link to="/LoginPage" className="register">
                   Quay lại đăng nhập
                 </Link>
               </div>

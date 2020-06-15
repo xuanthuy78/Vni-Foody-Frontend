@@ -34,70 +34,84 @@ export class AboutInformationProduct extends Component {
                 Món salad Nga luôn tươi ngon và hấp dẫn những ai thưởng thức.
               </p>
             </div>
-            <div className="social-medial">
-              <div className="like">
-                <div className="like-button">
-                  <button>
-                    <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                    Like 4
-                  </button>
+            <div>
+              <div className="row justify-content-between">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 social-medial">
+                  <div className="like-button">
+                    <button>
+                      <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                      Like 4
+                    </button>
+                  </div>
+                  <div className="share">
+                    <div className="share-button">
+                      <button>Share</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="share">
-                <div className="share-button">
-                  <button>Share</button>
-                </div>
-              </div>
-              <div className="right-button">
-                <div className="plus">
-                  <ul className="navbar-nav">
-                    <li className="nav-item text-share text-share">
-                      <i className="fa fa-plus-square" aria-hidden="true" />
-                      chia sẻ
-                      <ul className="navbar-nav button-social">
-                        <li className="nav-item">
-                          <i
-                            className="fa fa-facebook-square"
-                            aria-hidden="true"
-                          />
-                          <span className="text-social"> FaceBook</span>
-                        </li>
-                        <li className="nav-item">
-                          <i className="fa fa-twitter" aria-hidden="true" />
-                          <span className="text-social"> Twitter</span>
-                        </li>
-                        <li className="nav-item">
-                          <i className="fa fa-envelope" aria-hidden="true" />
-                          <span className="text-social"> Email</span>
-                        </li>
-                        <li className="nav-item">
-                          <i className="fa fa-pinterest" aria-hidden="true" />
-                          <span className="text-social"> Pinterset</span>
-                        </li>
-                        <li className="nav-item">
-                          <i
-                            className="fa fa-google-plus-square"
-                            aria-hidden="true"
-                          />
-                          <span className="text-social"> Google+</span>
-                        </li>
-                        <li className="nav-item">
-                          <i class="fa fa-print" aria-hidden="true" />
-                          <span className="text-social">Print</span>
-                        </li>
-                        <li className="nav-item">
-                          <i
-                            className="fa fa-plus-square add"
-                            aria-hidden="true"
-                          />
-                          <span className="text-social">Add</span>
+                <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                  <div className="right-button">
+                    <div className="plus">
+                      <ul className="navbar-nav">
+                        <li className="nav-item ">
+                          <i className="fa fa-plus-square" aria-hidden="true" />
+                          <span className="text-share"> chia sẻ</span>
+                          <ul className="navbar-nav button-social">
+                            <li className="nav-item">
+                              <i
+                                className="fa fa-facebook-square"
+                                aria-hidden="true"
+                              />
+                              <span className="text-social"> FaceBook</span>
+                            </li>
+                            <li className="nav-item">
+                              <i className="fa fa-twitter" aria-hidden="true" />
+                              <span className="text-social"> Twitter</span>
+                            </li>
+                            <li className="nav-item">
+                              <i
+                                className="fa fa-envelope"
+                                aria-hidden="true"
+                              />
+                              <span className="text-social"> Email</span>
+                            </li>
+                            <li className="nav-item">
+                              <i
+                                className="fa fa-pinterest"
+                                aria-hidden="true"
+                              />
+                              <span className="text-social"> Pinterset</span>
+                            </li>
+                            <li className="nav-item">
+                              <i
+                                className="fa fa-google-plus-square"
+                                aria-hidden="true"
+                              />
+                              <span className="text-social"> Google+</span>
+                            </li>
+                            <li className="nav-item">
+                              <i className="fa fa-print" aria-hidden="true" />
+                              <span className="text-social print-text">
+                                Print
+                              </span>
+                            </li>
+                            <li className="nav-item">
+                              <i
+                                className="fa fa-plus-square add"
+                                aria-hidden="true"
+                              />
+                              <span className="text-social add-text">Add</span>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div className="number">
-                  <button>2</button>
+                    </div>
+                    <div className="number">
+                      <button>
+                        <span className="about-number">2</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

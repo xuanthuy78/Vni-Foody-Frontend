@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './ScriptAboutProduct.scss';
+import React, { Component } from 'react'
+import './ScriptAboutProduct.scss'
 
 export class ScriptAboutProduct extends Component {
   render() {
@@ -40,9 +40,32 @@ export class ScriptAboutProduct extends Component {
             />
           </div>
         </div>
+        <div className="comment">
+          <form>
+            <div className="form-group">
+              <label>
+                Viết bình luận...
+                <i className="fa fa-pencil" aria-hidden="true"></i>
+              </label>
+              <textarea className="form-control" rows="3"></textarea>
+            </div>
+          </form>
+          <button className="btn btn-default" type="submit">
+            Gửi đi
+          </button>
+        </div>
+        <div className="content-comment">
+          <i className="fa fa-user" aria-hidden="true"></i>
+          <div className="info-comment">
+            <div className="info-user">
+              <span>User</span> 15.06.2020
+            </div>
+            <div className="content">Very Good</div>
+          </div>
+        </div>
       </div>
-    );
+    )
   }
 }
 
-export default ScriptAboutProduct;
+export default ScriptAboutProduct
