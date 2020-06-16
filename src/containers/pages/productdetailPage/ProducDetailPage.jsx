@@ -91,7 +91,6 @@ export class ProducDetailPage extends Component {
                   displayModalView={this.state.showModalView}
                   funtionCantion={this.handleCancel}
                 />
-
                 <ScriptAboutProduct></ScriptAboutProduct>
               </div>
             </div>
