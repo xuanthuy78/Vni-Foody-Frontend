@@ -13,10 +13,9 @@ export class ModalView extends Component {
           onOk={this.handleOk}
           onCancel={this.props.funtionCantion}
           footer={null}
-          className="content-modal"
-          width="70%"
+          width="60%"
         >
-          <div className="body-modal table-responsive">
+          <div className="table-responsive">
             <table className="table " width="100%">
               <thead>
                 <tr>
@@ -48,12 +47,7 @@ export class ModalView extends Component {
                     </Link>
                   </td>
                   <td className="item-quantity">
-                    <input
-                      type="number"
-                      className="text ng-pristine ng-untouched ng-valid"
-                      ng-model="item.Quantity"
-                      ng-change="updateItemCart(item)"
-                    />
+                    <input type="number" className="text " />
                   </td>
                   <td className="item-price ng-binding">312,000₫</td>
                   <td className="item-delete">
@@ -68,8 +62,7 @@ export class ModalView extends Component {
           <div className="modal-footer">
             <div className=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div className="total-price-modal">
-                Tổng cộng :
-                <span className="item-total ng-binding">157,000₫</span>
+                Tổng cộng :<span className="item-total">157,000₫</span>
               </div>
             </div>
           </div>

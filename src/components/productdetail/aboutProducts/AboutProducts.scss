@@ -3,7 +3,10 @@ $link-color: black;
 $menu-backgroud: rgb(215, 75, 51);
 $pride-color: rgb(90, 7, 0);
 .about-product {
-  border: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-top: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
   .item {
     border: none;
     padding: 0;
@@ -23,8 +26,8 @@ $pride-color: rgb(90, 7, 0);
       width: 95%;
       max-width: 100%;
       object-fit: cover;
-      overflow: hidden !important;
-      padding-bottom: 1% !important;
+      overflow: hidden;
+      padding-bottom: 1%;
     }
   }
   .name {
