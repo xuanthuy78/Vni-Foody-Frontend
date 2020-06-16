@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "./HotProduct.scss";
-import AboutProducts from "../aboutProducts/AboutProducts";
+import React, { Component } from 'react'
+import './HotProduct.scss'
+import AboutProducts from '../aboutProducts/AboutProducts'
 
 export class HotProduct extends Component {
   render() {
@@ -14,8 +14,8 @@ export class HotProduct extends Component {
           <AboutProducts></AboutProducts>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default HotProduct;
+export default HotProduct

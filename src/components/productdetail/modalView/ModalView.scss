@@ -20,7 +20,6 @@ $backgroud: gray;
         border: 1px solid $backgroud;
       }
     }
-
     .delete {
       color: #333334;
       &:hover {
@@ -37,17 +36,14 @@ $backgroud: gray;
       color: #333334;
     }
   }
-
   .continue {
     color: #333334;
     &:hover {
       color: rgb(215, 75, 51);
     }
   }
-
   .text-right {
     text-align: right;
-
     .btn-default {
       background-color: #333334;
       margin-right: -24px;
@@ -71,7 +67,6 @@ $backgroud: gray;
     }
   }
 }
-
 @media (min-width: 992px) and (max-width: 1236px) {
   .content-modal {
     .body-modal {

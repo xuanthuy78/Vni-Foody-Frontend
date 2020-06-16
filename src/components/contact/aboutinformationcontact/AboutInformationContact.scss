@@ -7,7 +7,7 @@ $menu-backgroud: rgb(215, 75, 51);
     margin-bottom: 20px;
     margin-top: 10px;
     .title {
-      line-height: 21px !important;
+      line-height: 21px;
       background: #d74b33 none repeat scroll 0 0;
       color: #fff;
       display: inline-block;
@@ -15,7 +15,7 @@ $menu-backgroud: rgb(215, 75, 51);
       padding: 7px 12px;
       position: relative;
       font-family: inherit;
-      margin: 0px !important;
+      margin: 0px;
     }
   }
 

@@ -17,7 +17,7 @@ export class SendInformationContact extends Component {
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
             <div className="contact-feedback">
-              <form className="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+              <form className="ng-pristine ng-invalid">
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
                     <span className="icon input-group-text" id="basic-addon1">
