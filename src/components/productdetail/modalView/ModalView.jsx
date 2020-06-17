@@ -36,8 +36,8 @@ export class ModalView extends Component {
                       className="img-top"
                       src={'assets/images/sup_cua_large.jpg'}
                       alt=""
-                      width="80px"
-                      height="80px"
+                      width="60px"
+                      height="60px"
                     />
                   </td>
                   <td className="item-title">
