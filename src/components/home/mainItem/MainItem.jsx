@@ -7,14 +7,16 @@ export class MainItem extends Component {
     return (
       <div className="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
         <div className="card">
-          <img
-            className="card-img-top"
-            src={'assets/images/sup_cua_large.jpg'}
-            alt=""
-          />
+          <Link to="/productdetail">
+            <img
+              className="card-img-top"
+              src={'assets/images/sup_cua_large.jpg'}
+              alt=""
+            />
+          </Link>
           <div className="card-body">
             <div className="card-name">
-              <Link to="#" className="link-product">
+              <Link to="/productdetail" className="link-product">
                 Noddel Tomato
               </Link>
             </div>
