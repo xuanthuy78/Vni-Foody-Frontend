@@ -1,23 +1,21 @@
 $backgroud: gray;
 .information-product {
-  .product-image {
+  .item-img {
     border: 5px solid #eee;
     display: block;
     width: 100%;
     margin: 5px 0 10px 0;
     text-align: center;
-    .img-top {
-      width: 99%;
-      max-width: 100%;
-      object-fit: cover;
-      overflow: hidden;
-      padding-bottom: 1%;
-      margin-bottom: -2px;
-      transition: transform 0.2s;
+    object-fit: cover;
+    overflow: hidden;
+    padding-bottom: -16%;
+    transition: all 0.2s ease-out;
+    img {
+      display: block;
+      width: 100%;
+      transition: all 0.2s ease-out;
       &:hover {
-        transform: scale(1);
-        width: 100%;
-        margin-top: 2px;
+        transform: scale(1.2);
       }
     }
   }
@@ -216,13 +214,11 @@ $backgroud: gray;
   .button-card {
     margin-top: 40px;
     display: flex;
-    font-size: 14px;
-    line-height: 1.42857143;
+    line-height: 1em;
     flex-direction: row;
     .btn-dark {
       &:hover {
         background-color: rgb(215, 75, 51);
-        border: 1px solid rgb(215, 75, 51);
       }
     }
     .btn-danger {
@@ -230,7 +226,6 @@ $backgroud: gray;
       margin-left: 5px;
       &:hover {
         background-color: gray;
-        color: rgb(215, 75, 51);
       }
     }
   }

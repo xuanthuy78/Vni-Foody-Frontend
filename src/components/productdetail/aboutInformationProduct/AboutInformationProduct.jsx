@@ -11,12 +11,8 @@ export class AboutInformationProduct extends Component {
       <div className="information-product">
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about-product">
-            <div className="product-image">
-              <img
-                className="img-top"
-                src={'assets/images/sup_cua_large.jpg'}
-                alt=""
-              />
+            <div className="item-img">
+              <img src={'assets/images/sup_cua_large.jpg'} alt="" />
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
