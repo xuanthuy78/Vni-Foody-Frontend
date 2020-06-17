@@ -11,12 +11,10 @@ export class MasterLayoutAdmin extends Component {
       showSidebar: showSidebar === 'false' ? false : true,
     }
   }
-
   handleShowSidebar = () => {
-    this.setState({
-      showSidebar: !this.state.showSidebar,
-    })
-    localStorage.setItem('show', this.state.showSidebar)
+    const showSidebar = !this.state.showSidebar
+    this.setState({ showSidebar })
+    localStorage.setItem('show', showSidebar)
   }
   render() {
     const childrenWithProps = React.Children.map(this.props.children, (child) =>
