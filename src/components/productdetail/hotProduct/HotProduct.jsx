@@ -12,6 +12,8 @@ export class HotProduct extends Component {
         </h3>
         <div className="box-product-block">
           <AboutProducts></AboutProducts>
+          <AboutProducts></AboutProducts>
+          <AboutProducts></AboutProducts>
         </div>
       </div>
     )

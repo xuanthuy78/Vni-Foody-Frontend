@@ -10,7 +10,7 @@ export class AboutInformationProduct extends Component {
     return (
       <div className="information-product">
         <div className="row">
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about-product">
             <div className="product-image">
               <img
                 className="img-top"

@@ -1,26 +1,24 @@
 $backgroud: gray;
 .information-product {
   .product-image {
+    border: 5px solid #eee;
     display: block;
     width: 100%;
     margin: 5px 0 10px 0;
     text-align: center;
-    border: 5px solid #eee;
-    transition: transform 0.2s;
-    &:hover {
-      transform: scale(1.1);
-      width: 100%;
-      margin-top: 10px;
-      text-align: center;
-    }
-
     .img-top {
-      width: 100%;
+      width: 99%;
       max-width: 100%;
       object-fit: cover;
       overflow: hidden;
       padding-bottom: 1%;
       margin-bottom: -2px;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1);
+        width: 100%;
+        margin-top: 2px;
+      }
     }
   }
   .information-title {
