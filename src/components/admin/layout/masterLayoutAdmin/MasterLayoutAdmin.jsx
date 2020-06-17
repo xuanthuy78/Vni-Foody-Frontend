@@ -6,23 +6,27 @@ import './MasterLayoutAdmin.scss'
 export class MasterLayoutAdmin extends Component {
   constructor() {
     super()
+    const showSidebar = localStorage.getItem('show')
     this.state = {
-      showSidebar: true,
+      showSidebar: showSidebar === 'false' ? false : true,
     }
   }
+
   handleShowSidebar = () => {
     this.setState({
       showSidebar: !this.state.showSidebar,
     })
+    localStorage.setItem('show', this.state.showSidebar)
   }
   render() {
     const childrenWithProps = React.Children.map(this.props.children, (child) =>
       React.cloneElement(child, {})
     )
+    console.log(this.state.showSidebar)
     return (
       <div className="admin-container">
         <HeaderAdmin showSidebar={this.handleShowSidebar} />
-        {this.state.showSidebar && <SidebarAdmin />}
+        <SidebarAdmin showSidebar={this.state.showSidebar} />
         <main
           className={this.state.showSidebar ? 'left-content' : 'main-content'}
         >

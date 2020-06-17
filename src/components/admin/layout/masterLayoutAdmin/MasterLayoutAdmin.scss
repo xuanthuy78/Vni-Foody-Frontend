@@ -154,9 +154,59 @@ $backgroud-sidebar: rgb(242, 223, 220);
     margin-top: 55px;
   }
   .main-content {
-    width: 100% !important;
-    min-height: 100% !important;
-    padding: 7em 2em;
+    // width: 100% !important;
+    // min-height: 100% !important;
+    // padding: 7em 2em;
+    float: right;
+    width: calc(100% - 69px);
+    min-height: 100%;
+    padding: 35px 20px 0px 20px;
+    margin-top: 55px;
+  }
+  .sidebar-menu-button {
+    width: 69px !important;
+    position: fixed;
+    float: left;
+    height: 100%;
+    top: 68px;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background: $backgroud-sidebar;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: black;
+          &:hover {
+            color: white;
+            background: $backgroud;
+          }
+        }
+        .parent {
+          display: flex;
+          flex-direction: column !important;
+          .icon {
+            text-align: center;
+            width: auto !important;
+          }
+          .title {
+            text-align: center;
+            width: auto !important;
+          }
+          .arrive {
+            display: none !important;
+          }
+        }
+        .children {
+          .nav-link {
+            padding-left: 0px !important;
+            .fa {
+              margin-right: 2px !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 // Responsive
