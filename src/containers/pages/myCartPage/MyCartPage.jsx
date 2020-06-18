@@ -15,7 +15,7 @@ export class MyCartPage extends Component {
                 <SidebarUser />
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                <div className="mycart-menu">
+                <div className="mycart-menu menu-title">
                   <ul className="nav">
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
@@ -32,7 +32,7 @@ export class MyCartPage extends Component {
                     </li>
                     <li className="nav-item active">
                       <Link className="nav-link " to="#">
-                        <strong>Đơn hàng của tôi</strong>
+                        <span>Đơn hàng của tôi</span>
                       </Link>
                     </li>
                   </ul>
@@ -75,7 +75,7 @@ export class MyCartPage extends Component {
                             </Link>
                           </td>
                         </tr>
-                        <tr>
+                        <tr className="number-color">
                           <td>2</td>
                           <td>
                             <Link className="code-order" to="/#">
@@ -117,7 +117,7 @@ export class MyCartPage extends Component {
                             </Link>
                           </td>
                         </tr>
-                        <tr>
+                        <tr className="number-color">
                           <td>4</td>
                           <td>
                             <Link className="code-order" to="/#">
