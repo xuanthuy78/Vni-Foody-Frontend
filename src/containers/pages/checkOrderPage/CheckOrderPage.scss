@@ -85,7 +85,7 @@
         }
       }
     }
-    .order-tracking-info {
+    .table-mycart {
       .table {
         border: 1px solid #dddddd;
         width: 100%;
@@ -195,6 +195,73 @@
     }
   }
 }
+@media (min-width: 992px) and (max-width: 1236px) {
+  .container {
+    .about-order {
+      .table-mycart {
+        .table {
+          white-space: nowrap;
+          .image {
+            img {
+              height: 60px;
+            }
+          }
+          .nameproduct {
+            color: #d74b33;
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    .about-order {
+      .table-mycart {
+        .table {
+          white-space: nowrap;
+          .image {
+            img {
+              height: 60px;
+            }
+          }
+          .nameproduct {
+            color: #d74b33;
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    .about-order {
+      .order-title {
+        h1 {
+          span {
+            white-space: nowrap;
+          }
+        }
+      }
+      .table-mycart {
+        .table {
+          white-space: nowrap;
+          .image {
+            img {
+              height: 60px;
+            }
+          }
+          .nameproduct {
+            color: #d74b33;
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (min-width: 0px) and (max-width: 479px) {
   .container {
     .about-order {
@@ -212,9 +279,18 @@
           }
         }
       }
-      .order-tracking-info {
+      .table-mycart {
         .table {
           white-space: nowrap;
+          .image {
+            img {
+              height: 60px;
+            }
+          }
+          .nameproduct {
+            color: #d74b33;
+            margin-left: -20px;
+          }
         }
       }
       .button {

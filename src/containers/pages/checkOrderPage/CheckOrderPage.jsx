@@ -55,8 +55,8 @@ export class CheckOrderPage extends Component {
                 <b className="ng-binding"> (#100000088)</b> lúc
                 <span className="grey ng-binding">2020-06-17T13:46:22.477</span>
               </div>
-              <div className="table-responsive order-tracking-info">
-                <table className="table table-mycart">
+              <div className="table-responsive table-mycart">
+                <table className="table ">
                   <thead>
                     <tr>
                       <th>STT</th>
@@ -96,6 +96,7 @@ export class CheckOrderPage extends Component {
                         <Link to="/productdetail">
                           <img
                             src={'assets/images/supreme_pizza_large.jpg'}
+                            alt=""
                             className="img-responsive"
                           />
                         </Link>
