@@ -20,6 +20,7 @@ import LoginPage from '../containers/pages/loginPage/LoginPage'
 import ContactPage from '../containers/pages/contactpage/ContactPage'
 import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetailPage'
 import CheckOrderPage from '../containers/pages/checkOrderPage/CheckOrderPage'
+import MyCartPage from '../containers/pages/myCartPage/MyCartPage'
 
 const routes = [
   {
@@ -118,6 +119,11 @@ const routes = [
     path: '/checkorder',
     exact: true,
     main: () => <CheckOrderPage />,
+  },
+  {
+    path: '/mycart',
+    exact: true,
+    main: () => <MyCartPage />,
   },
 ]
 

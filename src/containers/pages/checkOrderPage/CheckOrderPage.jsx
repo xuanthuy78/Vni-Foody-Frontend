@@ -168,7 +168,7 @@ export class CheckOrderPage extends Component {
                 </table>
               </div>
               <div className="button text-right">
-                <Link className="btn btn-default" to="/#">
+                <Link className="btn btn-default" to="/mycart">
                   Trở về danh sách đơn hàng
                 </Link>
                 <Link className="btn btn-primary" to="/product">
