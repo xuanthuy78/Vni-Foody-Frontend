@@ -51,7 +51,7 @@ export class HeaderMenu extends Component {
             <NavLink
               className="nav-link"
               activeClassName="selected"
-              to="/ContactPage"
+              to="/contactPage"
             >
               Liên hệ
               <div className="menu-caret" />

@@ -13,7 +13,6 @@ $background: white;
       font-weight: bold;
     }
   }
-
   .description {
     margin: 15px 0;
   }
@@ -42,7 +41,7 @@ $background: white;
   .contact-feedback {
     margin-bottom: 15px;
     font-size: 14px;
-    line-height: 1.42857143;
+    line-height: 1em;
     color: #333;
     box-sizing: border-box;
   }
@@ -61,8 +60,8 @@ $background: white;
 @media (min-width: 992px) and (max-width: 1236px) {
   .about-informationsend-contact {
     .google-map {
-      width: 340px !important;
-      height: 359px !important;
+      width: 340px;
+      height: 359px;
     }
   }
 }
@@ -70,8 +69,8 @@ $background: white;
   .about-informationsend-contact {
     margin-right: -5px;
     .google-map {
-      width: 695px !important;
-      height: 290px !important;
+      width: 695px;
+      height: 290px;
 
       margin-bottom: 60px;
     }
@@ -94,7 +93,6 @@ $background: white;
     .google-map {
       width: 700px;
       height: 220px;
-
       margin-bottom: 60px;
     }
   }
@@ -116,7 +114,6 @@ $background: white;
     .google-map {
       width: 350px;
       height: 220px;
-
       margin-bottom: 60px;
     }
   }
@@ -127,7 +124,6 @@ $background: white;
     .google-map {
       width: 335px;
       height: 220px;
-
       margin-bottom: 60px;
     }
   }
@@ -138,7 +134,6 @@ $background: white;
     .google-map {
       width: 295px;
       height: 290px;
-
       margin-bottom: 60px;
     }
   }

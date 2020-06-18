@@ -10,7 +10,6 @@ export class SendInformationContact extends Component {
           <h3 className="title">GỬI THÔNG TIN LIÊN HỆ</h3>
         </div>
         <div className="description">
-          {' '}
           Xin vui lòng điền các yêu cầu vào mẫu dưới đây và gửi cho chúng tôi.
           Chúng tôi sẽ trả lời bạn ngay sau khi nhận được. Xin chân thành cảm
           ơn!
@@ -18,7 +17,7 @@ export class SendInformationContact extends Component {
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
             <div className="contact-feedback">
-              <form className="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+              <form className="ng-pristine ng-invalid">
                 <div className="input-group mb-3">
                   <div className="input-group-prepend">
                     <span className="icon input-group-text" id="basic-addon1">
@@ -43,7 +42,7 @@ export class SendInformationContact extends Component {
                     type="text"
                     className="form-control"
                     placeholder="Địa chỉ"
-                    aria-label="Username"
+                    aria-label=""
                     aria-describedby="basic-addon1"
                   />
                 </div>
@@ -57,7 +56,7 @@ export class SendInformationContact extends Component {
                     type="text"
                     className="form-control"
                     placeholder="Email"
-                    aria-label="Username"
+                    aria-label=""
                     aria-describedby="basic-addon1"
                   />
                 </div>
