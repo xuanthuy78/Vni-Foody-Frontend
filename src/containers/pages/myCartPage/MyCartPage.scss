@@ -1,13 +1,29 @@
+$menu-backgroud: rgb(215, 75, 51);
 .container {
   .mycart {
     .mycart-menu {
       margin-top: 23px;
+      margin-bottom: 5px;
       .nav {
+        .nav-item {
+          .nav-link {
+            margin-left: 10px;
+            padding: 0px;
+            color: gray;
+            &:hover {
+              color: $menu-backgroud;
+            }
+          }
+        }
         .icon-link {
-          margin-left: 10px;
+          padding: 0 10px;
         }
         .active {
           margin-left: 10px;
+          .nav-link {
+            color: $menu-backgroud !important;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -29,16 +45,14 @@
         }
       }
       .my-order {
-        margin-bottom: 20px;
-        border: 1px solid #dddddd;
         .table {
+          border: 1px solid #dddddd;
           thead {
             background-color: #d74b33;
             color: #ffffff;
             th {
               padding: 8px;
               font-size: 14px;
-              border-bottom: 2px solid #ddd;
             }
           }
           tbody {

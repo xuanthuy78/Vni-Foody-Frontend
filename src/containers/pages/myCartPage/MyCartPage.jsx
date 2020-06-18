@@ -15,7 +15,7 @@ export class MyCartPage extends Component {
                 <SidebarUser />
               </div>
               <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                <div className="mycart-menu menu-title">
+                <div className="mycart-menu">
                   <ul className="nav">
                     <li className="nav-item">
                       <Link className="nav-link" to="#">

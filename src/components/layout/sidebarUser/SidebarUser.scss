@@ -8,7 +8,7 @@ $menu-backgroud: rgb(215, 75, 51);
   color: #333;
   .sidebar-title {
     background: #403d3b;
-    border: 1 px solid #403d3b;
+
     border: 1px solid #dddddd;
     .title {
       background-color: #d74b33;
@@ -41,6 +41,7 @@ $menu-backgroud: rgb(215, 75, 51);
       }
       .silebar-border {
         border-bottom: 1px dotted #c3c3c3;
+        margin-right: 10px;
       }
       .icon-text {
         margin-left: 5px;
