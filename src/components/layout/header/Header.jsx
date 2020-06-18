@@ -21,7 +21,7 @@ export class Header extends Component {
                   <div className="collapse navbar-collapse justify-content-end">
                     <ul className="navbar-nav">
                       <li className="nav-item">
-                        <Link className="nav-link" to="#">
+                        <Link className="nav-link" to="/checkorder">
                           <i className="fa fa-pencil-square-o" />
                           Kiểm tra đơn hàng
                         </Link>
@@ -33,13 +33,13 @@ export class Header extends Component {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="/LoginPage">
+                        <Link className="nav-link" to="/loginPage">
                           <i className="fa fa-sign-in" />
                           Đăng nhập
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="/RegisterPage">
+                        <Link className="nav-link" to="/registerPage">
                           <i className="fa fa-key" />
                           Đăng ký
                         </Link>
