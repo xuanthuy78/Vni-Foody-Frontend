@@ -86,11 +86,11 @@
       }
     }
     .table-mycart {
+      border: 1px solid #dddddd;
       .table {
-        border: 1px solid #dddddd;
         width: 100%;
         max-width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         background-color: transparent;
         thead {
           background-color: #d74b33;
@@ -105,6 +105,9 @@
             }
           }
         }
+        .information-total-order {
+          background-color: #eaeaea;
+        }
         .image {
           img {
             height: 60px;
@@ -114,10 +117,11 @@
           color: #d74b33;
           margin-left: -300px;
         }
-        .border-right {
+        .right-border {
           .box-customer-content {
             color: #333;
-            background-color: #fff;
+
+            border-right: none;
             .title {
               font-size: 14px;
               margin-bottom: 10px;
@@ -131,8 +135,12 @@
             }
           }
         }
+        .left-border {
+          border-left: none;
+        }
       }
       .table {
+        border: none;
         .table {
           border: none;
           background-color: #fff;

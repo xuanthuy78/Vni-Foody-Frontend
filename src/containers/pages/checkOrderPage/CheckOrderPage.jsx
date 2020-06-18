@@ -113,8 +113,8 @@ export class CheckOrderPage extends Component {
                       <td className="ng-binding">1</td>
                       <td className="ng-binding">269,000 đ</td>
                     </tr>
-                    <tr>
-                      <td colSpan={3} className="border-right">
+                    <tr className="information-total-order">
+                      <td colSpan={3} className="right-border">
                         <div className="box-customer-content">
                           <div className="title">
                             <span>THÔNG TIN GIAO HÀNG</span>
@@ -138,7 +138,7 @@ export class CheckOrderPage extends Component {
                           </div>
                         </div>
                       </td>
-                      <td colSpan={4}>
+                      <td colSpan={4} className="left-border">
                         <table className="table">
                           <tbody>
                             <tr>
