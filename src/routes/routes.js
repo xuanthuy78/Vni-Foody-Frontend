@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   HomePage,
   ProductPage,
@@ -13,14 +13,15 @@ import {
   FinishShoppingPage,
   ProductAdminPage,
   HomeAdminPage,
-} from '../containers/pages'
-import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord'
-import RegisterPage from '../containers/pages/registerPage/RegisterPage'
-import LoginPage from '../containers/pages/loginPage/LoginPage'
-import ContactPage from '../containers/pages/contactpage/ContactPage'
-import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetailPage'
-import CheckOrderPage from '../containers/pages/checkOrderPage/CheckOrderPage'
-import MyCartPage from '../containers/pages/myCartPage/MyCartPage'
+} from '../containers/pages';
+import ForgetPassWord from '../containers/pages/forgetPassWord/ForgetPassWord';
+import RegisterPage from '../containers/pages/registerPage/RegisterPage';
+import LoginPage from '../containers/pages/loginPage/LoginPage';
+import ContactPage from '../containers/pages/contactpage/ContactPage';
+import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetailPage';
+import CheckOrderPage from '../containers/pages/checkOrderPage/CheckOrderPage';
+import MyCartPage from '../containers/pages/myCartPage/MyCartPage';
+import MyCartDetailPage from '../containers/pages/myCartDetailPage/MyCartDetailPage';
 
 const routes = [
   {
@@ -125,6 +126,11 @@ const routes = [
     exact: true,
     main: () => <MyCartPage />,
   },
-]
+  {
+    path: '/mycartdetail',
+    exact: true,
+    main: () => <MyCartDetailPage />,
+  },
+];
 
-export default routes
+export default routes;
