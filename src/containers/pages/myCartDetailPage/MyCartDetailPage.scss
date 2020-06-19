@@ -59,19 +59,15 @@
           color: #ffffff;
           tr {
             th {
-              text-align: left;
-              vertical-align: bottom;
               padding: 8px;
-              line-height: 1em;
-              vertical-align: top;
+              font-size: 14px;
             }
           }
         }
-        tr:nth-child(even) {
-          &:hover {
-            background-color: #dddddd;
-          }
+        &:hover {
+          background-color: #dddddd;
         }
+
         .information-total-order {
           background-color: #eaeaea;
           border-color: #dddddd;

@@ -86,7 +86,9 @@
       }
     }
     .table-mycart {
-      border: 1px solid #dddddd;
+      margin-top: 5px;
+      border-right: 1px solid #dddddd;
+      border-left: 1px solid #dddddd;
       .table {
         width: 100%;
         max-width: 100%;
@@ -97,11 +99,8 @@
           color: #ffffff;
           tr {
             th {
-              text-align: left;
-              vertical-align: bottom;
               padding: 8px;
-              line-height: 1em;
-              vertical-align: top;
+              font-size: 14px;
             }
           }
         }
