@@ -32,7 +32,7 @@ export class RegisterPage extends Component {
                     </li>
                     <li className="nav-item active">
                       <Link className="nav-link" to="#">
-                        <strong>Đăng ký tài khoản</strong>
+                        <span>Đăng ký tài khoản</span>
                       </Link>
                     </li>
                   </ul>

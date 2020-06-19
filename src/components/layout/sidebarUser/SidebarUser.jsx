@@ -20,7 +20,7 @@ export class SidebarUser extends Component {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link silebar-border" to="/#">
+            <Link className="nav-link silebar-border" to="/mycart">
               <i className="fa fa-list-alt" aria-hidden="true" />
               <span className="icon-text">Đơn hàng của tôi</span>
             </Link>

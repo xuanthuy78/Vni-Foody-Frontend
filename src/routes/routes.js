@@ -21,6 +21,7 @@ import ContactPage from '../containers/pages/contactpage/ContactPage'
 import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetailPage'
 import CheckOrderPage from '../containers/pages/checkOrderPage/CheckOrderPage'
 import MyCartPage from '../containers/pages/myCartPage/MyCartPage'
+import MyCartDetailPage from '../containers/pages/myCartDetailPage/MyCartDetailPage'
 
 const routes = [
   {
@@ -124,6 +125,11 @@ const routes = [
     path: '/mycart',
     exact: true,
     main: () => <MyCartPage />,
+  },
+  {
+    path: '/mycartdetail',
+    exact: true,
+    main: () => <MyCartDetailPage />,
   },
 ]
 

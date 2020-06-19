@@ -1,12 +1,34 @@
 .container {
-  .checkorder-menu {
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-  .about-order {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    .order-title {
+  .mycartdetail {
+    .mycart-menu {
+      margin-top: 23px;
+      margin-bottom: 5px;
+      .nav {
+        .nav-item {
+          .nav-link {
+            margin-left: 0px;
+          }
+          .icon-link {
+            margin-left: 5px;
+          }
+        }
+
+        .active {
+          margin-left: 5px;
+        }
+      }
+    }
+    .about-mycartdetail {
+      .information-user {
+        font-size: 14px;
+        .customer-name {
+          color: #403d3b;
+          margin-left: 2px;
+          &:hover {
+            color: #d74b33;
+          }
+        }
+      }
       h1 {
         border-bottom: 1px solid #d74b33;
         .title {
@@ -24,68 +46,7 @@
         }
       }
     }
-    .code-order {
-      background-color: #eaeaea;
-      padding: 10px;
-      background-color: #eaeaea;
-      margin-bottom: 15px;
-
-      margin-top: 10px;
-      .form-inline {
-        .form-group {
-          label {
-            display: inline-block;
-            max-width: 100%;
-            margin-bottom: 5px;
-            font-weight: bold;
-            white-space: nowrap;
-            font-size: 14px;
-            color: #333;
-          }
-          .form-control {
-            margin-left: 5px;
-          }
-          .btn {
-            margin-left: 10px;
-            display: inline-block;
-            padding: 9px 15px;
-            line-height: 1.5em;
-            text-align: center;
-            color: #ffffff;
-            border-radius: 0;
-            border: none;
-            font-size: 14px;
-          }
-          .btn-primary {
-            background-color: #d74b33;
-            color: #ffffff;
-            &:hover {
-              background-color: #333334;
-            }
-          }
-        }
-      }
-    }
-    .information-order {
-      h2 {
-        font-weight: bold;
-        color: #d74b33;
-        font-size: 30px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-      }
-      .information-user {
-        font-size: 14px;
-        .customer-name {
-          color: #403d3b;
-          margin-left: 2px;
-          &:hover {
-            color: #d74b33;
-          }
-        }
-      }
-    }
-    .table-mycart {
+    .table-mycartdetail {
       margin-top: 5px;
       border-right: 1px solid #dddddd;
       border-left: 1px solid #dddddd;
@@ -93,7 +54,6 @@
         width: 100%;
         max-width: 100%;
         margin-bottom: 0px;
-        background-color: transparent;
         thead {
           background-color: #d74b33;
           color: #ffffff;
@@ -107,6 +67,7 @@
         }
         .information-total-order {
           background-color: #eaeaea;
+          border-color: #dddddd;
         }
         .image {
           img {
@@ -115,12 +76,11 @@
         }
         .nameproduct {
           color: #d74b33;
-          margin-left: -300px;
+          margin-left: -150px;
         }
         .right-border {
           .box-customer-content {
             color: #333;
-
             border-right: none;
             .title {
               font-size: 14px;
@@ -205,18 +165,12 @@
 }
 @media (min-width: 992px) and (max-width: 1236px) {
   .container {
-    .about-order {
-      .table-mycart {
+    .mycartdetail {
+      .table-mycartdetail {
         .table {
           white-space: nowrap;
-          .image {
-            img {
-              height: 60px;
-            }
-          }
           .nameproduct {
-            color: #d74b33;
-            margin-left: -20px;
+            margin-left: -40px;
           }
         }
       }
@@ -225,18 +179,12 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
-    .about-order {
-      .table-mycart {
+    .mycartdetail {
+      .table-mycartdetail {
         .table {
           white-space: nowrap;
-          .image {
-            img {
-              height: 60px;
-            }
-          }
           .nameproduct {
-            color: #d74b33;
-            margin-left: -20px;
+            margin-left: -40px;
           }
         }
       }
@@ -245,25 +193,12 @@
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .container {
-    .about-order {
-      .order-title {
-        h1 {
-          span {
-            white-space: nowrap;
-          }
-        }
-      }
-      .table-mycart {
+    .mycartdetail {
+      .table-mycartdetail {
         .table {
           white-space: nowrap;
-          .image {
-            img {
-              height: 60px;
-            }
-          }
           .nameproduct {
-            color: #d74b33;
-            margin-left: -20px;
+            margin-left: -50px;
           }
         }
       }
@@ -272,32 +207,12 @@
 }
 @media (min-width: 0px) and (max-width: 479px) {
   .container {
-    .about-order {
-      .code-order {
-        white-space: normal;
-        .form-inline {
-          .form-group {
-            .form-control {
-              margin-left: 0px;
-            }
-            .btn {
-              margin-top: 5px;
-              margin-left: 0px;
-            }
-          }
-        }
-      }
-      .table-mycart {
+    .mycartdetail {
+      .table-mycartdetail {
         .table {
           white-space: nowrap;
-          .image {
-            img {
-              height: 60px;
-            }
-          }
           .nameproduct {
-            color: #d74b33;
-            margin-left: -20px;
+            margin-left: -30px;
           }
         }
       }
