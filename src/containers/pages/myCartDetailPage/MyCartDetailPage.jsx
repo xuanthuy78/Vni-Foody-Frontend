@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import MasterLayout from '../../../components/layout/masterLayout/MasterLayout';
-import SidebarUser from '../../../components/layout/sidebarUser/SidebarUser';
-import './MyCartDetailPage.scss';
-import { Link } from 'react-router-dom';
-import { Partner } from '../../../components/product/partner/Partner';
+import React, { Component } from 'react'
+import MasterLayout from '../../../components/layout/masterLayout/MasterLayout'
+import SidebarUser from '../../../components/layout/sidebarUser/SidebarUser'
+import './MyCartDetailPage.scss'
+import { Link } from 'react-router-dom'
+import { Partner } from '../../../components/product/partner/Partner'
 export class MyCartDetailPage extends Component {
   render() {
     return (
@@ -161,8 +161,8 @@ export class MyCartDetailPage extends Component {
           </div>
         </section>
       </MasterLayout>
-    );
+    )
   }
 }
 
-export default MyCartDetailPage;
+export default MyCartDetailPage

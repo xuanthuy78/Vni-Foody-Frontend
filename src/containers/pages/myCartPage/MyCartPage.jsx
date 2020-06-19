@@ -57,19 +57,19 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>1</td>
                           <td>
-                            <Link className="code-order" to="/#">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000090
                             </Link>
                           </td>
                           <td>
-                            <Link className="user-name" to="#">
+                            <Link className="user-name" to="/mycartdetail">
                               Hồ Thị Vừa
                             </Link>
                           </td>
                           <td>136.000đ</td>
                           <td>Chưa</td>
                           <td>
-                            <Link className="order" to="/#">
+                            <Link className="order" to="/mycartdetail">
                               <i className="fa fa-angle-double-right " />
                               Xem đơn hàng
                             </Link>
@@ -78,19 +78,19 @@ export class MyCartPage extends Component {
                         <tr className="number-color">
                           <td>2</td>
                           <td>
-                            <Link className="code-order" to="/#">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000089
                             </Link>
                           </td>
                           <td>
-                            <Link className="user-name" to="#">
+                            <Link className="user-name" to="/mycartdetail">
                               Hồ Thị Vừa
                             </Link>
                           </td>
                           <td>127.000đ</td>
                           <td>Chưa</td>
                           <td>
-                            <Link className="order" to="/#">
+                            <Link className="order" to="/mycartdetail">
                               <i className="fa fa-angle-double-right " />
                               Xem đơn hàng
                             </Link>
@@ -99,19 +99,19 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>3</td>
                           <td>
-                            <Link className="code-order" to="/#">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000088
                             </Link>
                           </td>
                           <td>
-                            <Link className="user-name" to="#">
+                            <Link className="user-name" to="/mycartdetail">
                               Hồ Thị Vừa
                             </Link>
                           </td>
                           <td>589.000đ</td>
                           <td>Chưa</td>
                           <td>
-                            <Link className="order" to="/#">
+                            <Link className="order" to="/mycartdetail">
                               <i className="fa fa-angle-double-right " />
                               Xem đơn hàng
                             </Link>
@@ -120,19 +120,19 @@ export class MyCartPage extends Component {
                         <tr className="number-color">
                           <td>4</td>
                           <td>
-                            <Link className="code-order" to="/#">
+                            <Link className="code-order" to="//mycartdetail">
                               #100000087
                             </Link>
                           </td>
                           <td>
-                            <Link className="user-name" to="#">
+                            <Link className="user-name" to="/mycartdetail">
                               Hồ Thị Vừa
                             </Link>
                           </td>
                           <td>98.000đ</td>
                           <td>Chưa</td>
                           <td>
-                            <Link className="order" to="/#">
+                            <Link className="order" to="/mycartdetail">
                               <i className="fa fa-angle-double-right " />
                               Xem đơn hàng
                             </Link>
