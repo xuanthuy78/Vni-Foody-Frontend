@@ -61,8 +61,8 @@ $menu-backgroud: rgb(215, 75, 51);
                 }
               }
             }
-            .number-color {
-              background-color: #eaeaea;
+            tr:nth-child(even) {
+              background-color: #dddddd;
             }
           }
         }

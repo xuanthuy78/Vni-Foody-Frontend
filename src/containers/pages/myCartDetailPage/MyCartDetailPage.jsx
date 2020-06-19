@@ -51,7 +51,7 @@ export class MyCartDetailPage extends Component {
                       2020-06-17T13:46:22.477
                     </span>
                   </div>
-                  <div className="table-responsive table-mycartdetail">
+                  <div className="table-mycartdetail table-responsive">
                     <table className="table ">
                       <thead>
                         <tr>
@@ -66,6 +66,78 @@ export class MyCartDetailPage extends Component {
                       <tbody>
                         <tr>
                           <td>1</td>
+                          <td className="image">
+                            <Link to="/san-pham/tomato-sp.html">
+                              <img
+                                src={'assets/images/supreme_pizza_large.jpg'}
+                                className="img-responsive"
+                                alt=""
+                              />
+                            </Link>
+                          </td>
+                          <td>
+                            <Link
+                              className="nameproduct"
+                              to="/san-pham/tomato-sp.html"
+                            >
+                              Tomato sp
+                            </Link>
+                          </td>
+                          <td>tomato-sp</td>
+                          <td>68.000đ</td>
+                          <td>2</td>
+                          <td>136.000đ</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td className="image">
+                            <Link to="/san-pham/tomato-sp.html">
+                              <img
+                                src={'assets/images/supreme_pizza_large.jpg'}
+                                className="img-responsive"
+                                alt=""
+                              />
+                            </Link>
+                          </td>
+                          <td>
+                            <Link
+                              className="nameproduct"
+                              to="/san-pham/tomato-sp.html"
+                            >
+                              Tomato sp
+                            </Link>
+                          </td>
+                          <td>tomato-sp</td>
+                          <td>68.000đ</td>
+                          <td>2</td>
+                          <td>136.000đ</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td className="image">
+                            <Link to="/san-pham/tomato-sp.html">
+                              <img
+                                src={'assets/images/supreme_pizza_large.jpg'}
+                                className="img-responsive"
+                                alt=""
+                              />
+                            </Link>
+                          </td>
+                          <td>
+                            <Link
+                              className="nameproduct"
+                              to="/san-pham/tomato-sp.html"
+                            >
+                              Tomato sp
+                            </Link>
+                          </td>
+                          <td>tomato-sp</td>
+                          <td>68.000đ</td>
+                          <td>2</td>
+                          <td>136.000đ</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
                           <td className="image">
                             <Link to="/san-pham/tomato-sp.html">
                               <img

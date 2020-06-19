@@ -47,12 +47,13 @@
       }
     }
     .table-mycartdetail {
-      border: 1px solid #dddddd;
+      margin-top: 5px;
+      border-right: 1px solid #dddddd;
+      border-left: 1px solid #dddddd;
       .table {
         width: 100%;
         max-width: 100%;
         margin-bottom: 0px;
-        background-color: transparent;
         thead {
           background-color: #d74b33;
           color: #ffffff;
@@ -64,6 +65,11 @@
               line-height: 1em;
               vertical-align: top;
             }
+          }
+        }
+        tr:nth-child(even) {
+          &:hover {
+            background-color: #dddddd;
           }
         }
         .information-total-order {
@@ -82,7 +88,6 @@
         .right-border {
           .box-customer-content {
             color: #333;
-
             border-right: none;
             .title {
               font-size: 14px;
