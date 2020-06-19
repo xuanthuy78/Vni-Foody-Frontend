@@ -120,7 +120,7 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>4</td>
                           <td>
-                            <Link className="code-order" to="//mycartdetail">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000087
                             </Link>
                           </td>
@@ -141,7 +141,7 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>5</td>
                           <td>
-                            <Link className="code-order" to="//mycartdetail">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000087
                             </Link>
                           </td>
@@ -162,7 +162,7 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>6</td>
                           <td>
-                            <Link className="code-order" to="//mycartdetail">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000087
                             </Link>
                           </td>
@@ -183,7 +183,7 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>7</td>
                           <td>
-                            <Link className="code-order" to="//mycartdetail">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000087
                             </Link>
                           </td>
@@ -204,7 +204,7 @@ export class MyCartPage extends Component {
                         <tr>
                           <td>8</td>
                           <td>
-                            <Link className="code-order" to="//mycartdetail">
+                            <Link className="code-order" to="/mycartdetail">
                               #100000087
                             </Link>
                           </td>

@@ -86,12 +86,12 @@ export class FinishShoppingPage extends Component {
               </div>
             </div>
             <div className="finish-btn button-same end">
-              <button type="button" className="btn btn-dark mr-2 continue">
+              <Link to="/product" className="btn btn-dark mr-2 continue">
                 TIẾP TỤC MUA HÀNG
-              </button>
-              <button type="button" className="btn btn-danger pay">
+              </Link>
+              <Link to="/mycart" className="btn btn-danger pay">
                 Đơn hàng của tôi
-              </button>
+              </Link>
             </div>
           </div>
 
