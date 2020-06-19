@@ -51,7 +51,7 @@ export class MyCartDetailPage extends Component {
                       2020-06-17T13:46:22.477
                     </span>
                   </div>
-                  <div className="table-mycartdetail table-responsive">
+                  <div className="table-mycartdetail table-responsive ">
                     <table className="table ">
                       <thead>
                         <tr>
@@ -67,7 +67,7 @@ export class MyCartDetailPage extends Component {
                         <tr>
                           <td>1</td>
                           <td className="image">
-                            <Link to="/san-pham/tomato-sp.html">
+                            <Link to="/productdetail">
                               <img
                                 src={'assets/images/supreme_pizza_large.jpg'}
                                 className="img-responsive"
@@ -76,10 +76,7 @@ export class MyCartDetailPage extends Component {
                             </Link>
                           </td>
                           <td>
-                            <Link
-                              className="nameproduct"
-                              to="/san-pham/tomato-sp.html"
-                            >
+                            <Link className="nameproduct" to="/productdetail">
                               Tomato sp
                             </Link>
                           </td>
@@ -91,7 +88,7 @@ export class MyCartDetailPage extends Component {
                         <tr>
                           <td>2</td>
                           <td className="image">
-                            <Link to="/san-pham/tomato-sp.html">
+                            <Link to="/productdetail">
                               <img
                                 src={'assets/images/supreme_pizza_large.jpg'}
                                 className="img-responsive"
@@ -100,10 +97,7 @@ export class MyCartDetailPage extends Component {
                             </Link>
                           </td>
                           <td>
-                            <Link
-                              className="nameproduct"
-                              to="/san-pham/tomato-sp.html"
-                            >
+                            <Link className="nameproduct" to="/productdetail">
                               Tomato sp
                             </Link>
                           </td>
@@ -115,7 +109,7 @@ export class MyCartDetailPage extends Component {
                         <tr>
                           <td>3</td>
                           <td className="image">
-                            <Link to="/san-pham/tomato-sp.html">
+                            <Link to="/productdetail">
                               <img
                                 src={'assets/images/supreme_pizza_large.jpg'}
                                 className="img-responsive"
@@ -124,10 +118,7 @@ export class MyCartDetailPage extends Component {
                             </Link>
                           </td>
                           <td>
-                            <Link
-                              className="nameproduct"
-                              to="/san-pham/tomato-sp.html"
-                            >
+                            <Link className="nameproduct" to="/productdetail">
                               Tomato sp
                             </Link>
                           </td>
@@ -139,7 +130,7 @@ export class MyCartDetailPage extends Component {
                         <tr>
                           <td>4</td>
                           <td className="image">
-                            <Link to="/san-pham/tomato-sp.html">
+                            <Link to="/productdetail">
                               <img
                                 src={'assets/images/supreme_pizza_large.jpg'}
                                 className="img-responsive"
@@ -148,10 +139,7 @@ export class MyCartDetailPage extends Component {
                             </Link>
                           </td>
                           <td>
-                            <Link
-                              className="nameproduct"
-                              to="/san-pham/tomato-sp.html"
-                            >
+                            <Link className="nameproduct" to="/productdetail">
                               Tomato sp
                             </Link>
                           </td>
