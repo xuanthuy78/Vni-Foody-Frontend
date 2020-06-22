@@ -22,6 +22,7 @@ import ProducDetailPage from '../containers/pages/productdetailPage/ProducDetail
 import CheckOrderPage from '../containers/pages/checkOrderPage/CheckOrderPage'
 import MyCartPage from '../containers/pages/myCartPage/MyCartPage'
 import MyCartDetailPage from '../containers/pages/myCartDetailPage/MyCartDetailPage'
+import ChangePassWordPage from '../containers/pages/changePassWordPage/ChangePassWordPage'
 
 const routes = [
   {
@@ -130,6 +131,11 @@ const routes = [
     path: '/mycartdetail',
     exact: true,
     main: () => <MyCartDetailPage />,
+  },
+  {
+    path: '/changepassword',
+    exact: true,
+    main: () => <ChangePassWordPage />,
   },
 ]
 
