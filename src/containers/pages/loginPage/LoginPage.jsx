@@ -33,7 +33,7 @@ export class LoginPage extends Component {
                     </li>
                     <li className="nav-item active">
                       <Link className="nav-link " to="#">
-                        <strong>Đăng nhập</strong>
+                        <span>Đăng nhập</span>
                       </Link>
                     </li>
                   </ul>
