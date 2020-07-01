@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 export class SidebarAdmin extends Component {
   render() {
     return (
-      <section className="sidebar-menu">
+      <section
+        className={
+          this.props.showSidebar ? 'sidebar-menu' : 'sidebar-menu-button'
+        }
+      >
         <ul className="navbar-nav" id="accordion">
           <li className="nav-item">
             <Link className="nav-link parent" to="/admin/product">
